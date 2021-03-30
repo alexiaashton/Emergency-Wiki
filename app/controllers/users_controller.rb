@@ -1,5 +1,4 @@
 class UsersController < ApplicationController
-
   def index
     @users = policy_scope(User)
   end
@@ -18,6 +17,10 @@ class UsersController < ApplicationController
     else
       render :new
     end
+  end
+
+  def update
+
   end
 
   private
