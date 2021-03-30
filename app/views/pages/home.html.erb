@@ -1,2 +1,13 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<%= form_with url: businesses_path, method: :get do |form| %>
+  <%= form.label :location, "Location" %>
+  <%= form.text_field :location %>
+  <%= form.radio_button :category, "Doctor" %>
+  <%= form.label :doctor, "Doctor" %>
+  <%= form.radio_button :category, "Dentist" %>
+  <%= form.label :dentist, "Dentist" %>
+  <%= form.radio_button :category, "Veterinaire" %>
+  <%= form.label :veterinaire, "Veterinaire" %>
+  <%= form.radio_button :category, "Pharmacy" %>
+  <%= form.label :pharmacy, "Pharmacy" %>
+    <%= form.submit "Search" %>
+<% end %>
