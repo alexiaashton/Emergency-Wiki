@@ -26,8 +26,8 @@ pharmacie1 = Business.create!(
   address: 'Bussigny',
   phone_number: '021 334 55 67',
   comment: 'Please call before passing!',
-  category: Category.first,
-  user: User.first,
+  category: categorie_pharmacie,
+  user: user1,
 )
 
 pharmacie2 = Business.create!(
@@ -36,6 +36,7 @@ pharmacie2 = Business.create!(
   phone_number: '021 333 44 66',
   comment: 'Please call before passing!',
   category: categorie_pharmacie,
+  user: user1,
 )
 
 pharmacie3 = Business.create!(
@@ -44,6 +45,7 @@ pharmacie3 = Business.create!(
   phone_number: '021 456 77 66',
   comment: 'Please call before passing!',
   category: categorie_pharmacie,
+  user: user1,
 )
 
 pharmacie4 = Business.create!(
@@ -52,6 +54,7 @@ pharmacie4 = Business.create!(
   phone_number: '021 221 23 33',
   comment: 'Please call before passing!',
   category: categorie_pharmacie,
+  user: user1,
 )
 
 puts '4 pharmacies created'
@@ -62,6 +65,7 @@ dentiste1 = Business.create!(
   phone_number: '021 334 55 67',
   comment: 'Please call before passing!',
   category: categorie_dentiste,
+  user: user2,
 )
 
 dentiste2 = Business.create!(
@@ -70,6 +74,7 @@ dentiste2 = Business.create!(
   phone_number: '021 333 44 66',
   comment: 'Please call before passing!',
   category: categorie_dentiste,
+  user: user2,
 )
 
 dentiste3 = Business.create!(
@@ -78,6 +83,7 @@ dentiste3 = Business.create!(
   phone_number: '021 456 77 66',
   comment: 'Please call before passing!',
   category: categorie_dentiste,
+  user: user2,
 )
 
 dentiste4 = Business.create!(
@@ -86,6 +92,7 @@ dentiste4 = Business.create!(
   phone_number: '021 221 23 33',
   comment: 'Please call before passing!',
   category: categorie_dentiste,
+  user: user2,
 )
 
 puts '4 dentists created'
@@ -96,6 +103,7 @@ doctor1 = Business.create!(
   phone_number: '021 334 55 67',
   comment: 'Please call before passing!',
   category: categorie_medecin,
+  user: user3,
 )
 
 doctor2 = Business.create!(
@@ -104,6 +112,7 @@ doctor2 = Business.create!(
   phone_number: '021 333 44 66',
   comment: 'Please call before passing!',
   category: categorie_medecin,
+  user: user3,
 )
 
 doctor3 = Business.create!(
@@ -112,6 +121,7 @@ doctor3 = Business.create!(
   phone_number: '021 456 77 66',
   comment: 'Please call before passing!',
   category: categorie_medecin,
+  user: user3,
 )
 
 doctor4 = Business.create!(
@@ -120,6 +130,7 @@ doctor4 = Business.create!(
   phone_number: '021 221 23 33',
   comment: 'Please call before passing!',
   category: categorie_medecin,
+  user: user3,
 )
 
 puts '4 doctors created'
@@ -130,6 +141,7 @@ vet1 = Business.create!(
   phone_number: '021 334 55 67',
   comment: 'Please call before passing!',
   category: categorie_veterinaire,
+  user: user4,
 )
 
 vet2 = Business.create!(
@@ -138,6 +150,7 @@ vet2 = Business.create!(
   phone_number: '021 333 44 66',
   comment: 'Please call before passing!',
   category: categorie_veterinaire,
+  user: user4,
 )
 
 vet3 = Business.create!(
@@ -146,6 +159,7 @@ vet3 = Business.create!(
   phone_number: '021 456 77 66',
   comment: 'Please call before passing!',
   category: categorie_veterinaire,
+  user: user4,
 )
 
 vet4 = Business.create!(
@@ -154,6 +168,7 @@ vet4 = Business.create!(
   phone_number: '021 221 23 33',
   comment: 'Please call before passing!',
   category: categorie_veterinaire,
+  user: user4,
 )
 
 puts '4 vets created'
