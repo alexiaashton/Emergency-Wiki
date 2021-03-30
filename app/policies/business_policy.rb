@@ -17,7 +17,7 @@ class BusinessPolicy < ApplicationPolicy
     user.present?
   end
 
-  def destroy
+  def destroy?
     user.present?
   end
 
