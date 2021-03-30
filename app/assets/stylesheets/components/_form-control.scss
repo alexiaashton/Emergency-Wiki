@@ -1,0 +1,10 @@
+// changes the border color of the sign up and login input form
+
+.form-control {
+  border-color: $main-green;
+}
+
+.form-control:focus {
+  border-color: $main-green;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(77, 172, 146, 0.6);
+}
