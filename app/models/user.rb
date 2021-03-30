@@ -6,5 +6,5 @@ class User < ApplicationRecord
  
   validates :email, presence: true, confirmation: true, uniqueness: { case_sensitive: true }, format: { with: URI::MailTo::EMAIL_REGEXP}
   validates :password, presence: true
-  
+
 end
