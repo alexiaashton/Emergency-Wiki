@@ -12,10 +12,15 @@ user4 = User.create!(username:"Veterinaires-sans-limites-SA", password:"123456",
 puts '4 users created'
 
 puts 'all categories destroyed'
-categorie_pharmacie = Category.create!({name:"Pharmacie", image:"../app/assets/images/pharmacie.png"})
-categorie_dentiste = Category.create!({name:"Dentiste", image:"../app/assets/images/dentiste.png"})
-categorie_medecin = Category.create!({name:"Medecin", image:"../app/assets/images/medecin.png"})
-categorie_veterinaire = Category.create!({name:"Veterinaire", image:"../app/assets/images/veterinaire.png"})
+
+def seed_image(file_name)
+  File.open(File.join(Rails.root, "/app/assets/images/#{file_name}.png"))
+end
+
+categorie_pharmacie = Category.create!({name:"Pharmacie", image: seed_image('pharmacie')})
+categorie_dentiste = Category.create!({name:"Dentiste", image: seed_image('dentiste')})
+categorie_medecin = Category.create!({name:"Medecin", image: seed_image('medecin')})
+categorie_veterinaire = Category.create!({name:"Veterinaire", image: seed_image('veterinaire')})
 
 puts '4 categories with name and images created'
 
