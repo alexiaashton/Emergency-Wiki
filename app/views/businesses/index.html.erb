@@ -1,7 +1,8 @@
 <h1>business index</h2>
 <% @businesses.each do |business|%>
   <%= business.name %>
-  <%= business.address%>
-  <%= business.phone_number%>
+  <p>distance</p>
+  <p>Open Until: <%= business.schedules.first.closes %></p>
+
 <% end %>
 

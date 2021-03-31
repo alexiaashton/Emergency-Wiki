@@ -14,7 +14,7 @@ puts '4 users created'
 puts 'all categories destroyed'
 
 def seed_image(file_name)
-  File.open(File.join(Rails.root, "/app/assets/images/#{file_name}.png"))
+  File.open(File.join(Rails.root, "/app/assets/images/'#{file_name}'.png"))
 end
 
 categorie_pharmacie = Category.create!({name:"Pharmacie", image: seed_image('pharmacie')})
