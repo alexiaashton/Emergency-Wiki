@@ -1,9 +1,14 @@
-Business.destroy_all
-User.destroy_all
-Category.destroy_all
+puts "destryoing Schedule"
 Schedule.destroy_all
+puts "destryoing Users"
+User.destroy_all
+puts "Category"
+Category.destroy_all
+puts "destryoing business"
+Business.destroy_all
 
-puts 'all users destroyed'
+puts 'all insances destroyed'
+
 user1 = User.create!(username:"Pharmacie-Sun-Store-SA", password:"123456", email:"info@sun-store.ch")
 user2 = User.create!(username:"Dentiste-24-SA", password:"123456", email:"info@dentiste-24.ch")
 user3 = User.create!(username:"Permanence-de-Gare-SA", password:"123456", email:"info@permanence-de-gare.ch")
@@ -11,20 +16,15 @@ user4 = User.create!(username:"Veterinaires-sans-limites-SA", password:"123456",
 
 puts '4 users created'
 
-puts 'all categories destroyed'
+puts "creating categories..."
 
-def seed_image(file_name)
-  File.open(File.join(Rails.root, "/app/assets/images/'#{file_name}'.png"))
-end
-
-categorie_pharmacie = Category.create!({name:"Pharmacie", image: seed_image('pharmacie')})
-categorie_dentiste = Category.create!({name:"Dentiste", image: seed_image('dentiste')})
-categorie_medecin = Category.create!({name:"Medecin", image: seed_image('medecin')})
-categorie_veterinaire = Category.create!({name:"Veterinaire", image: seed_image('veterinaire')})
+categorie_pharmacie = Category.create!({name:"Pharmacie", image: "pharmacie.png"})
+categorie_dentiste = Category.create!({name:"Dentiste", image: "dentiste.png"})
+categorie_medecin = Category.create!({name:"Medecin", image: "medecin.png"})
+categorie_veterinaire = Category.create!({name:"Veterinaire", image: 'veterinaire.png'})
 
 puts '4 categories with name and images created'
 
-puts 'all businesses destroyed'
 
 pharmacie1 = Business.create!(
   name: 'Pharmacie Sun Store Bussigny',
