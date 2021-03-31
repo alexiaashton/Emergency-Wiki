@@ -1,13 +1,11 @@
 // this is the CSS for the category, businesses and user cards
 
+// this is the css for the category cards on the business index for the visitors
 .category-cards {
 
 }
 
-.user-cards {
-
-}
-
+// this is the css for the business cards on the businesses index for the visitors
 .businesses-cards {
   display: flex;
   justify-content: space-between;
@@ -52,4 +50,9 @@
   font-weight: bold;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
   padding-bottom: 5px;
+}
+
+// this is the css for the user business cards
+.user-cards {
+
 }
