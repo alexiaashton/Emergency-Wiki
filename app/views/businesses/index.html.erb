@@ -5,7 +5,7 @@
       <div>
         <%= business.name %>
         <p>distance</p>
-        <p>Open Until: <%= business.schedules.first.closes %></p>
+        <p>Open Until: <%= business.schedules.first.closes.strftime("%H:%M") %> on <%= business.schedules.first.closes.strftime("%d %B") %></p>
       </div>
     <% end %>
   <% end %>
