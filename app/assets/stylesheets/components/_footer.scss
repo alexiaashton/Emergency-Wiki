@@ -1,0 +1,17 @@
+// put the style for the footer here
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 100vw;
+  background-color: $dark-green;
+  color: white;
+}
+
+#login {
+  color: white;
+}

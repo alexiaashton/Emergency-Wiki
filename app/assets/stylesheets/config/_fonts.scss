@@ -1,9 +1,8 @@
 // Import Google fonts
-@import url('https://fonts.googleapis.com/css2?family=Oxygen&family=Ubuntu:wght@500&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Assistant&family=Montserrat&display=swap');
 // Define fonts for body and headers
-$body-font: 'Oxygen', sans-serif;
-$headers-font: 'Ubuntu', sans-serif;
+$body-font: 'Assistant', sans-serif;
+$headers-font: 'Montserrat', sans-serif;
 
 h1, h2, h3 {
   font-family: $headers-font;
