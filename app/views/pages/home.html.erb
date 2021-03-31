@@ -1,4 +1,6 @@
-<%= form_with url: businesses_path, method: :get do |form| %>
+<%= render 'shared/header' %>
+<div class="content-container">
+  <%= form_with url: businesses_path, method: :get do |form| %>
   <%= text_field_tag :query,
     params[:query],
     placeholder: "Input the Location"
@@ -13,8 +15,4 @@
   <%= form.label :pharmacy, "Pharmacy" %>
   <%= form.submit "Search", class: "button-medium-green"%>
 <% end %>
-
-
-<Div class="map">
-  <%= render '/shared/map' %>
-</Div>
+</div>
