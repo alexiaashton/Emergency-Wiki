@@ -31,13 +31,19 @@
     <a class="button-big-red" href="#">.button-big-red</a>
   </div>
   <br>
+    <div class="slide-button">
+    <label class="toggle-control">
+    <input type="checkbox" checked="checked">
+    <span class="control"></span>
+  </label>
+  </div>
   <br>
-  <p>this is the header for the visitors index and show:</p>
-
+  <br>
+  <br>
   <p>Cards</p>
   <p>.businesses-cards</p>
 
-  <p>businesses cards for business Index with KM</p>
+  <p>businesses cards for business Index with KM:</p>
   <div class="businesses-cards">
     <div class="businesses-cards-info">
       <h5>Pharmacie 24</h5>
@@ -50,16 +56,22 @@
     </div>
   </div>
   <br>
+  <p>business cards for the different categories:</p>
+  <div class="category-cards">
+    <h2>Dentists</h2>
+    <%= image_tag "dentiste.png", class: "category-image" %>
+  </div>
   <br>
-  <div class="slide-button">
-    <label class="toggle-control">
-    <input type="checkbox" checked="checked">
-    <span class="control"></span>
-  </label>
+  <p>business cards for the users businesses:</p>
+  <div class="user-businesses-cards">
+    <div class="user-business-cards-info">
+      <h5>Veterinaire Lausanne SA</h5>
+      <p>Avenue de MontChoisi 3</p>
+      <p>1003 Lausanne</p>
+    </div>
+    <div class="user-businesses-cards-logo">
+        <%= image_tag "veterinaire.png", class: "users-business-image" %>
+    </div>
   </div>
 </div>
-<br>
-<br>
-<br>
-<br>
-<br>
+

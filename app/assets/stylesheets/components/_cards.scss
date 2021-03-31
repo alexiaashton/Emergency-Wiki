@@ -1,20 +1,17 @@
 // this is the CSS for the category, businesses and user cards
 
-// this is the css for the category cards on the business index for the visitors
-.category-cards {
-
-}
-
-// this is the css for the business cards on the businesses index for the visitors
+.user-businesses-cards,
+.category-cards,
 .businesses-cards {
   display: flex;
   justify-content: space-between;
-  width: 300px;
+  align-items: center;
+  max-width: 340px;
   height: 125px;
   background-color: $main-green;
   border-radius: 8px;
+  line-height: 1.2;
   color: white;
-  line-height: 0.4;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
   &:hover {
     background-color: $dark-green;
@@ -23,6 +20,7 @@
   }
 }
 
+.user-businesses-cards-logo,
 .businesses-cards-km {
   display: flex;
   align-items: center;
@@ -37,19 +35,28 @@
   }
 }
 
-.businesses-cards .businesses-cards-km {
+.user-businesses-cards-logo,
+.category-cards,
+.businesses-cards-km {
  padding: 16px;
 }
 
+.user-business-cards-info,
 .businesses-cards-info{
   display: inline-block;
   padding: 15px;
 }
 
+.user-businesses-cards h5,
+.category-cards h2,
 .businesses-cards h5 {
   font-weight: bold;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
-  padding-bottom: 5px;
+  margin-bottom: 5px;
+}
+
+.category-cards h2 {
+  font-size: 32px;
 }
 
 // this is the css for the user business cards
