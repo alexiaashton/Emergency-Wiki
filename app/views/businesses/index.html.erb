@@ -1,4 +1,6 @@
-<h2>business index</h2>
+<%= render 'shared/visitors-header' %>
+<div class="content-container">
+  <h2>business index</h2>
 <div>
   <% @businesses.each do |business|%>
     <%= link_to(business_path(business)) do %>
@@ -10,4 +12,6 @@
     <% end %>
   <% end %>
  </div>
+</div>
+
 
