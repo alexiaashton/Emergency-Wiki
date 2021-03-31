@@ -9,5 +9,47 @@
 }
 
 .businesses-cards {
+  display: flex;
+  justify-content: space-between;
+  width: 300px;
+  height: 125px;
+  background-color: $main-green;
+  border-radius: 8px;
+  color: white;
+  line-height: 0.4;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  &:hover {
+    background-color: $dark-green;
+    text-decoration: none;
+    color: white;
+  }
+}
 
+.businesses-cards-km {
+  display: flex;
+  align-items: center;
+  height: 125px;
+  width: 70px;
+  border-radius: 0px 8px 8px 0px;
+  background-color: $light-green;
+  color:black;
+  text-align: center;
+  h5 {
+  text-shadow: 2px 2px 2px white;
+  }
+}
+
+.businesses-cards .businesses-cards-km {
+ padding: 16px;
+}
+
+.businesses-cards-info{
+  display: inline-block;
+  padding: 15px;
+}
+
+.businesses-cards h5 {
+  font-weight: bold;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+  padding-bottom: 5px;
 }
