@@ -3,7 +3,7 @@ class BusinessesController < ApplicationController
 
   def index
     if params[:query].present?
-      @businesses = policy_scope(Business).near(params[:query], params[:km])
+      @businesses = policy_scope(Business).near(params[:query])#, params[:km])
     else
       @businesses = policy_scope(Business)
     end
