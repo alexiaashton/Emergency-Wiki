@@ -1,31 +1,32 @@
 // green buttons
 
 .button-small-green {
-
-}
-
-.button-medium-green {
-
+  padding: 12px 16px;
+  background-color: $main-green;
 }
 
 .button-big-green {
-
+  padding: 12px 16px;
+  background-color: $main-green;
 }
 
 // red buttons
 
 .button-small-red {
-
+  padding: 12px 16px;
+  background-color: $alert-red;
 }
 
 .button-big-red {
-
+  padding: 12px 16px;
+  background-color: $alert-red;
 }
 
 // go back button
 
 .button-go-back {
-
+  padding: 10px;
+  background-color: $main-green;
 }
 
 // for the slide buttons see _slide-buttons.scss
