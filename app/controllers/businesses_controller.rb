@@ -2,11 +2,18 @@ class BusinessesController < ApplicationController
   skip_before_action :authenticate_user!, only: [:index, :show]
 
   def index
-    @businesses = policy_scope(Business)
-      if params[:query].present?
-      @business = Business.where(address: params[:query])
+    if params[:query].present?
+      @businesses = policy_scope(Business).near(params[:query], params[:km])
     else
-      @businesses = Business.all
+      @businesses = policy_scope(Business)
+    end
+    @markers = @businesses.geocoded.map do |business|
+      {
+        lat: business.latitude,
+        lng: business.longitude,
+        infoWindow: render_to_string(partial: "info_window", locals: { business: business }),
+        image_tag: helpers.asset_url(business.category.image)
+      }
     end
   end
 
