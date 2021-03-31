@@ -13,14 +13,14 @@ class UsersController < ApplicationController
     @user = User.create(user_params)
     authorize @user
     if @user.save
-      redirect_to user_session
+      redirect_to users_path
     else
-      render :new
+      raise
+      render :index
     end
   end
 
   def update
-
   end
 
   private

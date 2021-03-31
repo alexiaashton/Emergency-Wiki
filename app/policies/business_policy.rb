@@ -21,4 +21,8 @@ class BusinessPolicy < ApplicationPolicy
     user.present?
   end
 
+  def show?
+    return true
+  end
+
 end

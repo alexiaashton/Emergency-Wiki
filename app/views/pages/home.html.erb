@@ -1,6 +1,8 @@
 <%= form_with url: businesses_path, method: :get do |form| %>
-  <%= form.label :location, "Location" %>
-  <%= form.text_field :location %>
+  <%= text_field_tag :query,
+    params[:query],
+    placeholder: "Input the Location"
+  %>
   <%= form.radio_button :category, "Doctor" %>
   <%= form.label :doctor, "Doctor" %>
   <%= form.radio_button :category, "Dentist" %>
@@ -9,5 +11,6 @@
   <%= form.label :veterinaire, "Veterinaire" %>
   <%= form.radio_button :category, "Pharmacy" %>
   <%= form.label :pharmacy, "Pharmacy" %>
-    <%= form.submit "Search" %>
+    <%= form.submit "Search", class: "btn btn-primary"%>
 <% end %>
+
