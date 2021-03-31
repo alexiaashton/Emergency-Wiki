@@ -1,26 +1,21 @@
 // green buttons
 
 .button-small-green {
+  display: inline-block;
   padding: 12px 16px;
   background-color: $main-green;
-}
-
-.button-big-green {
-  padding: 12px 16px;
-  background-color: $main-green;
+  border-radius: 24px;
+  color: white;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+  &:hover {
+    background-color: $dark-green;
+    text-decoration: none;
+    color: white;
+  }
 }
 
 // red buttons
-
-.button-small-red {
-  padding: 12px 16px;
-  background-color: $alert-red;
-}
-
-.button-big-red {
-  padding: 12px 16px;
-  background-color: $alert-red;
-}
 
 // go back button
 
