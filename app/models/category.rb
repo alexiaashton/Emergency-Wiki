@@ -1,5 +1,5 @@
 class Category < ApplicationRecord
-  belong_to :businesses
+  has_many :businesses
   validates :name, presence: true
   validates :image, presence: true
 end

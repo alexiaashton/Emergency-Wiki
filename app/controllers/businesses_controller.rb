@@ -3,6 +3,11 @@ class BusinessesController < ApplicationController
 
   def index
     @businesses = policy_scope(Business)
+      if params[:query].present?
+      @business = Business.where(address: params[:query])
+    else
+      @businesses = Business.all
+    end
   end
 
   def show
