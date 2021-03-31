@@ -2,6 +2,7 @@ class BusinessesController < ApplicationController
   skip_before_action :authenticate_user!, only: [:index, :show]
 
   def index
+
     
     if params[:query].present?
       @businesses = Business.near(params[:query], params[:km])
@@ -21,6 +22,7 @@ class BusinessesController < ApplicationController
 
   def show
     @business = Business.find(params[:id])
+    authorize @business
   end
 
   def new

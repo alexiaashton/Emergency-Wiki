@@ -1,0 +1,25 @@
+#visitors-header {
+  display: inline;
+}
+
+#back-arrow {
+  font-size: 72px;
+  color: $main-green;
+  &:hover {
+    color: $dark-green;
+    cursor: pointer;
+  }
+}
+
+@media (min-width: 992px) {
+  #back-arrow {
+    font-size: 96px;
+  }
+}
+
+@media (max-width: 425px) {
+  header #visitors-title {
+    text-align: center;
+    font-size: 22px;
+  }
+}
