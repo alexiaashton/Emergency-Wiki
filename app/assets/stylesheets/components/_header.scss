@@ -2,10 +2,11 @@
 header {
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: center;
   padding: 10px;
   background-color: $light-green;
   width: 100vw;
+  height: 100px;
   h1 {
     font-size: 24px;
     text-shadow: 2px 2px 2px white;
@@ -28,15 +29,19 @@ header {
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
+  header {
+    height: 140px;
+  }
+
   #logo {
   width: 120px;
   }
 
-  #title h1 {
+  header h1 {
     font-size: 48px;
   }
 
-  #title h3 {
+  header h3 {
     font-size: 24px;
   }
 }
