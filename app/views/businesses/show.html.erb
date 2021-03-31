@@ -1,6 +1,6 @@
 <h1><%= @business.name %></h1>
 <h3><%= @business.address %></h3>
-<p> Open until <%= @business.schedules.first.closes %> </p>
+<p> Open until <%= @business.schedules.first.closes.strftime("%H:%M") %> </p>
 <h3><%= @business.phone_number %><h3>
 <h3>Call Now!</h3>
  <%= image_tag @business.category.image %>
