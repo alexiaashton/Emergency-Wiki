@@ -4,6 +4,7 @@
 .category-cards,
 .businesses-cards {
   display: flex;
+  position: relative;
   justify-content: space-between;
   align-items: center;
   max-width: 340px;
@@ -33,6 +34,20 @@
   h5 {
   text-shadow: 2px 2px 2px white;
   }
+}
+
+.category-cards-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 125px;
+  width: 120px;
+  border-radius: 0px 8px 8px 0px;
+  background-color: $light-green;
+  text-align: center;
+  margin-right: 0;
+  position: absolute;
+  right: 0;
 }
 
 .user-businesses-cards-logo,
