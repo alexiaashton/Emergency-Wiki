@@ -7,33 +7,30 @@
     <h1 id="visitors-title">Emergency Wiki</h1>
     <%= image_tag "emergency-wiki-logo.png", id:"logo" %>
 </header>
-<div class="map-container">
 
-<%= render 'shared/map' %>
-</div>
-
-<div class="content-container">
-  <h2>business index</h2>
-<div>
-  <% @businesses.each do |business|%>
-    <%= link_to(business_path(business)) do %>
-      <div>
-        <div class="businesses-cards">
-          <div class="businesses-cards-info">
-           <h5><%= business.name %></h5>
-            <p><%= business.address %></p>
-            <p><%= business.geocode %></p>
-            <p>Open Until: <%= business.schedules.first.closes.strftime("%H:%M") %> on <%= business.schedules.first.closes.strftime("%d %B") %></p>
+<div class="business-index-container">
+  <div class="business-cards-container">
+      <% @businesses.each do |business|%>
+        <%= link_to(business_path(business)) do %>
+          <div>
+            <div class="businesses-cards">
+              <div class="businesses-cards-info">
+               <h5><%= business.name %></h5>
+                <p><%= business.address %></p>
+                <p>Open Until: <%= business.schedules.first.closes.strftime("%H:%M") %> on <%= business.schedules.first.closes.strftime("%d %B") %></p>
+              </div>
+              <div class="businesses-cards-km">
+                <h5>5 km</h5>
+              </div>
+            </div>
           </div>
-          <div class="businesses-cards-km">
-            <h5>5 km</h5>
-          </div>
-        </div>
-      </div>
-    <% end %>
-  <% end %>
+        <% end %>
+      <% end %>
+  </div>
+  <div class="map-container-index">
+    <%= render 'shared/map' %>
+  </div>
 </div>
-
 
 
 
