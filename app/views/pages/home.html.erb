@@ -6,9 +6,11 @@
       <% @categories.each do |category| %>
       <div class="category-cards">
         <div class="category-cards-info">
-          <%= form.radio_button :category, category.id %>
-          <%= form.label :doctor, category.name, style: "font-size: 30px;" %>
-        </div>
+          <label>
+            <input type="radio" name="category" value="<%= category.id %>">
+            <%= category.name %>
+          </label>
+     </div>
         <div class="category-cards-logo">
           <%= image_tag category.image , class: "category-image" %>
         </div>

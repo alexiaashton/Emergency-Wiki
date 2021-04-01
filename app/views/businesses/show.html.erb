@@ -3,7 +3,7 @@
     <i class="fas fa-arrow-alt-circle-left", id="back-arrow"></i>
   <% end %>
   <h1 id="visitors-title">Emergency Wiki</h1>
-
+  <%= link_to "Back to Home", root_path, class: "back-to-home-button" %>
 </header>
 <div class="show-content-container">
   <div class="show-info">
@@ -29,4 +29,3 @@
     <%= render 'shared/map' %>
   </div>
 </div>
-<%# <%= link_to "Back to Home", root_path, class: "back-to-home-button" %>
