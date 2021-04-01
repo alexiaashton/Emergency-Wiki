@@ -1,25 +1,23 @@
-// .popup img{
-//   width: 220px;
-// }
-
-// .title h3{
-//   text-align: center;
-// }
-
-// .container-popup{
-//   border-radius: 30px;
-//   color: black;
-//   border-color: none;
-
-// }
 
 
-// .text p{
-//   text-align:center;
+.title h2{
+  text-align: center;
+}
 
-// }
+.container-popup{
+  border-radius: 30px;
+  color: black;
+  border-color: none;
 
-// .popup :hover >a h3 p{
-//   -webkit-filter: opacity(.5);
-//   filter: opacity(.5);
-// }
+}
+
+
+.text p{
+  text-align:center;
+
+}
+
+.popup :hover > p{
+  -webkit-filter: opacity(.5);
+  filter: opacity(.5);
+}
