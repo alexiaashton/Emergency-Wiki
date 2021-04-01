@@ -63,10 +63,13 @@
 
 .user-businesses-cards h5,
 .category-cards h2,
-.businesses-cards h5 {
+.businesses-cards {
   font-weight: bold;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
   margin-bottom: 5px;
+  &:hover {
+    text-decoration: none;
+  }
 }
 
 .category-cards h2 {

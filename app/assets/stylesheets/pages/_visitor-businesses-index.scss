@@ -1,10 +1,53 @@
 // // put your style for the visitor businesses index page here
-// .index-card-container{
-//   display:grid;
-//   grid-template-columns: 1fr 1fr;
-// }
+.business-index-container {
+  display:flex;
+}
 
-// .businesses-cards-box{
-//   display:block;
-//   padding-bottom: 10px;
-// }
+.business-cards-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 16px;
+}
+
+.map-container-index {
+  height: 100vh;
+  width: 50%;
+  position: sticky;
+  top: 0;
+}
+
+.business-index-links:hover {
+  text-decoration: none;
+}
+
+/*Media Queries*/
+
+/*Smallest device*/
+@media (min-width: 100px) and (max-width: 575px) {
+  .business-cards-container {
+    grid-template-columns: 1fr;
+  }
+  .map-container-index {
+    display: none;
+  }
+}
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {
+  .business-cards-container {
+    grid-template-columns: 1fr 1fr;
+  }
+  .map-container-index {
+    display: none;
+  }
+}
+
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 1200px) {
+  .business-cards-container {
+    grid-template-columns: 1fr 1fr;
+  }
+  .map-container-index {
+    display: block;
+  }
+}
