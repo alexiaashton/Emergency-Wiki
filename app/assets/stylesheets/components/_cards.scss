@@ -1,7 +1,6 @@
 // this is the CSS for the category, businesses and user cards
 
 .user-businesses-cards,
-.category-cards,
 .businesses-cards {
   display: flex;
   justify-content: space-between;
@@ -17,6 +16,26 @@
   overflow: none;
   &:hover {
     background-color: $dark-green;
+    text-decoration: none;
+    color: white;
+  }
+}
+
+.category-cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 340px;
+  height: 125px;
+  background-color: $main-green;
+  border-radius: 8px;
+  line-height: 1.2;
+  color: white;
+  margin: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  overflow: none;
+  &:hover {
+    background-color: $alert-red;
     text-decoration: none;
     color: white;
   }
@@ -50,7 +69,6 @@
 }
 
 .user-businesses-cards-logo,
-.category-cards,
 .businesses-cards-km {
  padding: 16px;
  padding-right: 0;

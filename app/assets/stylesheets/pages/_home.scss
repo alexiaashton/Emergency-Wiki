@@ -13,7 +13,7 @@ input[type="submit" i] {
 }
 
 input[type="radio"] {
-
+  display: none;
 }
 
 .category-boxes {
@@ -37,4 +37,16 @@ input[type="radio"] {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
+}
+
+.category-boxes label {
+  width: 220px;
+  height: 125px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+  margin-bottom: 5px;
+  font-size: 32px;
 }
