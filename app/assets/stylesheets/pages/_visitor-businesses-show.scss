@@ -1,1 +1,38 @@
 // put your style for the visitor businesses show page here
+.show-content-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 100vh;
+}
+
+.show-info-flex {
+  display: inline-flex;
+}
+
+.show-info {
+
+}
+
+.show-info-description {
+
+}
+
+.show-info-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding-top: 20px;
+}
+
+.show-map {
+ background-color: blue;
+}
+
+.show-button {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
