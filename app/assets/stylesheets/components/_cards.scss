@@ -14,6 +14,7 @@
   color: white;
   margin: 10px;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  overflow: none;
   &:hover {
     background-color: $dark-green;
     text-decoration: none;
@@ -62,11 +63,14 @@
 }
 
 .user-businesses-cards h5,
-.category-cards-info,
-.businesses-cards h5 {
+.category-cards h2,
+.businesses-cards {
   font-weight: bold;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
   margin-bottom: 5px;
+  &:hover {
+    text-decoration: none;
+  }
 }
 
 .category-cards h2 {
