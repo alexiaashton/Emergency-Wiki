@@ -12,11 +12,14 @@
   top: 0;
   right: 0;
 }
-/* @media (min-width: 1200px)
+.map-container{
+  display: flex;
+  justify-content: space-between;
+}
 .map {
   display: block;
 }
-@media (min-width: 576px)
-.map {
-    display: none;
-} */
+// @media (min-width: 576px)
+// .map {
+//     display: none;
+// } */
