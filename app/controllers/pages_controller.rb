@@ -5,13 +5,12 @@ class PagesController < ApplicationController
     if params[:query].present?
       @business = Business.where(address: params[:query])
     else
-      @businesses= Business.all
+      @businesses = Business.all
     end
+    @categories = Category.all
   end
 
   def components
     render 'components/components'
   end
-
-
 end
