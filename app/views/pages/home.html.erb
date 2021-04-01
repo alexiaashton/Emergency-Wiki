@@ -1,5 +1,4 @@
 <%= render 'shared/header' %>
-<div class="content-container">
   <div class="home-search-container">
     <%= form_with url: businesses_path, method: :get, class: 'algolia-form' do |form| %>
     <%= text_field_tag :query, params[:query], placeholder: "Input the Location"%>
@@ -8,7 +7,7 @@
       <div class="category-cards">
         <div class="category-cards-info">
           <%= form.radio_button :category, category.id %>
-          <%= form.label :doctor, category.name %>
+          <%= form.label :doctor, category.name, style: "font-size: 30px;" %>
         </div>
         <div class="category-cards-logo">
           <%= image_tag category.image , class: "category-image" %>
@@ -16,9 +15,8 @@
       </div>
       <% end %>
     </div>
-
-    <%= form.submit "Search", class: "button-medium-green"%>
+    <div class="button-centered">
+          <%= form.submit "Search", class: "button-big-red"%>
+    </div>
     <% end %>
   </div>
-
-</div>

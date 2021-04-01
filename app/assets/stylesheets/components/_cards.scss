@@ -6,7 +6,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 340px;
+  width: 340px;
   height: 125px;
   background-color: $main-green;
   border-radius: 8px;
@@ -62,7 +62,7 @@
 }
 
 .user-businesses-cards h5,
-.category-cards h2,
+.category-cards-info,
 .businesses-cards h5 {
   font-weight: bold;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
