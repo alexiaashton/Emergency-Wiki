@@ -1,13 +1,20 @@
 // this is the CSS for the category images
-
-.category-image-small {
-
+.show-image {
+  width: 200px;
 }
 
-.category-image-medium {
-
+.category-image {
+  width: 80px;
+  height: 80px;
 }
 
-.category-image-big {
+@media (max-width: 992px) {
+  .show-image {
+    width: 160px;
+  }
+}
 
+.users-business-image {
+  width: 40px;
+  height: 40px;
 }

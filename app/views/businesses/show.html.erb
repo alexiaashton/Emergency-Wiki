@@ -1,17 +1,15 @@
 <header>
   <%= link_to businesses_path do %>
     <i class="fas fa-arrow-alt-circle-left", id="back-arrow"></i>
-    <% end %>
-    <h1 id="visitors-title">Emergency Wiki</h1>
-    <%= image_tag "emergency-wiki-logo.png", id:"logo" %>
+  <% end %>
+  <h1 id="visitors-title">Emergency Wiki</h1>
+  <%= link_to "Back to Home", root_path, class: "back-to-home-button" %>
 </header>
 <div class="content-container">
-<h1><%= @business.name %></h1>
-<h3><%= @business.address %></h3>
-<p> Open until <%= @business.schedules.first.closes.strftime("%H:%M") %> </p>
-<h3><%= @business.phone_number %><h3>
-<h3>Call Now!</h3>
- <%= image_tag @business.category.image %>
- <%= link_to "Back to Home", root_path, class: "button-medium-red" %>
- </div>
-
+  <h1><%= @business.name %></h1>
+  <h3><%= @business.address %></h3>
+  <p> Open until <%= @business.schedules.first.closes.strftime("%H:%M") %> </p>
+  <h3><%= @business.phone_number %><h3>
+  <h3>Call Now!</h3>
+   <%= image_tag @business.category.image, class: "show-image" %>
+</div>
