@@ -1,11 +1,10 @@
 // put your style for the home page here
 .algolia-places {
   width: 80%;
-  margin-bottom: 20px;
   display: inline !important;
 }
 .algolia-form{
-  width: 100%;
+  width: 80%;
 }
 
 
@@ -14,23 +13,27 @@ input[type="submit" i] {
 }
 
 input[type="radio"] {
-  font-weight: bold;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
-  margin-bottom: 5px;
-  h2 {
-    color: black;
-  }
-}
 
-.home-search-container {
-  display: flex;
-  justify-content: center;
-  width: 50vw;
-  height: auto;
-  background-color: blue;
 }
 
 .category-boxes {
+  display: flex;
+  justify-content: center;
   padding-bottom: 10px;
   flex-wrap: wrap;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.home-search-container {
+  width: 100vw;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 60vh;
+}
+
+.button-centered {
+  display: flex;
+  justify-content: center;
 }
