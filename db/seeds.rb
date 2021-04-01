@@ -62,7 +62,44 @@ pharmacie4 = Business.create!(
   user: user1,
 )
 
-puts '4 pharmacies created'
+
+pharmacie5 = Business.create!(
+  name: 'Pharmacie  patate manmaw',
+  address: 'Genève',
+  phone_number: '021 334 55 67',
+  comment: 'Please call before passing!',
+  category: categorie_pharmacie,
+  user: user1,
+)
+
+pharmacie6 = Business.create!(
+  name: 'Pharmacie Marcelin',
+  address: 'Fribourg',
+  phone_number: '021 334 55 67',
+  comment: 'Please call before passing!',
+  category: categorie_pharmacie,
+  user: user1,
+)
+
+pharmacie7 = Business.create!(
+  name: 'Pharmacie de Riddes',
+  address: 'rue du faubourg 11, 1908 Riddes',
+  phone_number: '021 334 55 67',
+  comment: 'Please call before passing!',
+  category: categorie_pharmacie,
+  user: user1,
+)
+
+pharmacie8 = Business.create!(
+  name: 'Pharmacie Daniela ',
+  address: 'Bienne',
+  phone_number: '021 334 55 67',
+  comment: 'Please call before passing!',
+  category: categorie_pharmacie,
+  user: user1,
+)
+
+puts '8 pharmacies created'
 
 dentiste1 = Business.create!(
   name: 'Dentiste 24 Bussigny',
@@ -99,8 +136,40 @@ dentiste4 = Business.create!(
   category: categorie_dentiste,
   user: user2,
 )
+dentiste5 = Business.create!(
+  name: 'Dentiste MarcoChico',
+  address: 'Fribourg',
+  phone_number: '021 333 44 66',
+  comment: 'Please call before passing!',
+  category: categorie_dentiste,
+  user: user2,
+)
+dentiste6 = Business.create!(
+  name: 'Dentiste Michelandco',
+  address: 'Payern',
+  phone_number: '021 333 44 66',
+  comment: 'Please call before passing!',
+  category: categorie_dentiste,
+  user: user2,
+)
+dentiste7 = Business.create!(
+  name: 'Kimboslice',
+  address: 'Neuchatel',
+  phone_number: '021 333 44 66',
+  comment: 'Please call before passing!',
+  category: categorie_dentiste,
+  user: user2,
+)
+dentiste8 = Business.create!(
+  name: 'Rodolph',
+  address: 'Bern',
+  phone_number: '021 333 44 66',
+  comment: 'Please call before passing!',
+  category: categorie_dentiste,
+  user: user2,
+)
 
-puts '4 dentists created'
+puts '8 dentists created'
 
 doctor1 = Business.create!(
   name: 'Medecin de Bussigny SA',
@@ -184,11 +253,20 @@ Schedule.create!(opens: DateTime.new(2021,4,1,19,0,0), closes: DateTime.new(2021
 Schedule.create!(opens: DateTime.new(2021,4,1,19,0,0), closes: DateTime.new(2021,4,2,7,0,0), business: pharmacie2)
 Schedule.create!(opens: DateTime.new(2021,4,1,19,0,0), closes: DateTime.new(2021,4,2,7,0,0), business: pharmacie3)
 Schedule.create!(opens: DateTime.new(2021,4,1,19,0,0), closes: DateTime.new(2021,4,2,7,0,0), business: pharmacie4)
+Schedule.create!(opens: DateTime.new(2021,4,1,19,0,0), closes: DateTime.new(2021,4,2,7,0,0), business: pharmacie5)
+Schedule.create!(opens: DateTime.new(2021,4,1,19,0,0), closes: DateTime.new(2021,4,2,7,0,0), business: pharmacie6)
+Schedule.create!(opens: DateTime.new(2021,4,1,19,0,0), closes: DateTime.new(2021,4,2,7,0,0), business: pharmacie7)
+Schedule.create!(opens: DateTime.new(2021,4,1,19,0,0), closes: DateTime.new(2021,4,2,7,0,0), business: pharmacie8)
 
 Schedule.create!(opens: DateTime.new(2021,4,1,19,0,0), closes: DateTime.new(2021,4,2,7,0,0), business: dentiste1)
 Schedule.create!(opens: DateTime.new(2021,4,1,19,0,0), closes: DateTime.new(2021,4,2,7,0,0), business: dentiste2)
 Schedule.create!(opens: DateTime.new(2021,4,1,19,0,0), closes: DateTime.new(2021,4,2,7,0,0), business: dentiste3)
 Schedule.create!(opens: DateTime.new(2021,4,1,19,0,0), closes: DateTime.new(2021,4,2,7,0,0), business: dentiste4)
+Schedule.create!(opens: DateTime.new(2021,4,1,19,0,0), closes: DateTime.new(2021,4,2,7,0,0), business: dentiste5)
+Schedule.create!(opens: DateTime.new(2021,4,1,19,0,0), closes: DateTime.new(2021,4,2,7,0,0), business: dentiste6)
+Schedule.create!(opens: DateTime.new(2021,4,1,19,0,0), closes: DateTime.new(2021,4,2,7,0,0), business: dentiste7)
+Schedule.create!(opens: DateTime.new(2021,4,1,19,0,0), closes: DateTime.new(2021,4,2,7,0,0), business: dentiste8)
+
 
 Schedule.create!(opens: DateTime.new(2021,4,1,19,0,0), closes: DateTime.new(2021,4,2,7,0,0), business: doctor1)
 Schedule.create!(opens: DateTime.new(2021,4,1,19,0,0), closes: DateTime.new(2021,4,2,7,0,0), business: doctor2)
