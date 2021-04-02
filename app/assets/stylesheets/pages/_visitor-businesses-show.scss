@@ -11,15 +11,11 @@
 }
 
 .show-info {
-  background-color: blue;
-  display: flex;
-  justify-content: center;
-  margin: 20px;
 
 }
 
 .show-info-description {
-  background-color: yellow;
+
 }
 
 .show-info-logo {
@@ -42,7 +38,7 @@
   margin-top: 30px;
 }
 
-// media queries
+//
 
 @media (max-width: 1430px) {
    .business-cards-container {

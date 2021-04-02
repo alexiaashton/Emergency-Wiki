@@ -17,13 +17,16 @@
       <div class="show-info-logo">
         <%= image_tag @business.category.image, class: "show-image" %>
       </div>
-    </div>
-    <div class="show-button">
-      <div class="button-big-red">
-        <%= tel_to "Call Now!", @business.phone_number, style: "font-size: 32px; color: white; font-weight: bold;" %>
+      </div>
+      <div class="show-button">
+        <div class="button-big-red">
+          <%= tel_to "Call Now!", @business.phone_number, style: "font-size: 32px; color: white; font-weight: bold;" %>
+        </div>
       </div>
     </div>
+
   </div>
   <div class="show-map">
     <%= render 'shared/map' %>
   </div>
+</div>
