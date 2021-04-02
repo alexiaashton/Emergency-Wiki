@@ -8,26 +8,26 @@
 
 <div class="business-index-container">
   <div class="business-cards-container">
-      <% @businesses.each do |business|%>
-        <%= link_to(business_path(business)) do%>
-          <div class="businesses-cards">
-            <div class="businesses-cards-info">
-             <h5><%= business.name %></h5>
-              <p><%= business.address %></p>
-              <p>Open Until: <%= business.schedules.first.closes.strftime("%H:%M") %> on <%= business.schedules.first.closes.strftime("%d %B") %></p>
-            </div>
-            <div class="businesses-cards-km">
-              <%# <h5>kilometers should go here when we get that figured out </5>%>
-            </div>
+    <% @businesses.each do |business|%>
+      <%= link_to(business_path(business)) do%>
+        <div class="businesses-cards">
+          <div class="businesses-cards-info">
+            <h5 style="font-size: 22px;"><%= business.name %></h5>
+            <p style="font-size: 18px; color: white; text-shadow: none; font-weight: normal;"><%= business.address %></p>
+            <p style="font-size: 18px; color: white; text-shadow: none; font-weight: normal;">Open Until: <%= business.schedules.first.closes.strftime("%H:%M") %> on <%= business.schedules.first.closes.strftime("%d %B") %></p>
           </div>
-        <% end%>
-      <% end %>
+          <div class="businesses-cards-km">
+            <%# <h5>kilometers should go here when we get that figured out </5>%>
+          </div>
+        </div>
+      <% end%>
+    <% end %>
   </div>
   <div class="map-container-index" id="delaymap" style="visibility:hidden;">
     <%= render 'shared/map' %>
   </div>
 </div>
-  
+
   <script>
     setTimeout(function(){
       document.getElementById('delaymap').style.visibility = "visible";
