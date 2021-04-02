@@ -26,6 +26,7 @@ class BusinessesController < ApplicationController
       infoWindow: render_to_string(partial: "info_window", locals: { business: @business }),
       image_url: helpers.asset_url(@business.category.image)
     }]
+
   end
 
   def new

@@ -1,5 +1,5 @@
 <header>
-  <%= link_to businesses_path do %>
+  <%= link_to 'javascript:history.go(-1);' do %>
     <i class="fas fa-arrow-alt-circle-left", id="back-arrow"></i>
   <% end %>
   <h1 id="visitors-title">Emergency Wiki</h1>
@@ -13,7 +13,6 @@
         <h3><%= @business.address %></h3>
         <p> Open until <%= @business.schedules.first.closes.strftime("%H:%M") %> </p>
         <h3><%= @business.phone_number %><h3>
-        <h3>Call Now!</h3>
       </div>
       <div class="show-info-logo">
         <%= image_tag @business.category.image, class: "show-image" %>
@@ -21,7 +20,7 @@
     </div>
     <div class="show-button">
       <div class="button-big-red">
-        <h5>Call now!</h5>
+        <%= tel_to "Call Now!", @business.phone_number, style: "font-size: 32px; color: white; font-weight: bold;" %>
       </div>
     </div>
   </div>
