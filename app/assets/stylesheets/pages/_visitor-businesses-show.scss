@@ -31,13 +31,12 @@
   height: 100vh;
 }
 
-.show-button {
-  display:flex;
+#show-button {
+  display:inline-block;
   justify-content: center;
-  align-items: center;
+  align-content: center;
   margin-top: 30px;
 }
-//
 
 @media (max-width: 1430px) {
    .business-cards-container {
