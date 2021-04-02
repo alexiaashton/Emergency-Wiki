@@ -24,11 +24,13 @@ import "bootstrap";
 // Internal imports, e.g:
 import { initAutocomplete } from '../plugins/init_autocomplete';
 import { initMapbox } from '../plugins/init_mapbox';
+import { initChangeColor } from '../pages/home_boxes';
 
 document.addEventListener('turbolinks:load', () => {
   // Call your functions here, e.g:
   initMapbox();
   initAutocomplete();
+  initChangeColor();
 });
 
 
