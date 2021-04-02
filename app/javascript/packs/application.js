@@ -28,9 +28,9 @@ import { initChangeColor } from '../pages/home_boxes';
 
 document.addEventListener('turbolinks:load', () => {
   // Call your functions here, e.g:
+  initChangeColor();
   initMapbox();
   initAutocomplete();
-  initChangeColor();
 });
 
 
