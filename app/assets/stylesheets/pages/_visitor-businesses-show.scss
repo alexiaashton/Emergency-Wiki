@@ -5,19 +5,14 @@
   height: 100vh;
   margin-top: 140px;
 }
-
 .show-info-flex {
   display: inline-flex;
 }
-
 .show-info {
   margin: 70px;
 }
-
 .show-info-description {
-
 }
-
 .show-info-logo {
   display: flex;
   justify-content: center;
@@ -26,7 +21,6 @@
   height: 100%;
   padding-top: 20px;
 }
-
 .show-map {
   height: 100vh;
 }
@@ -44,7 +38,6 @@
      justify-items: center;
   }
 }
-
 @media (max-width: 992px) {
   .business-index-container {
     flex-direction: column;
@@ -55,13 +48,11 @@
     width: 100vw;
     height: 50vh !important;
   }
-
   .business-cards-container {
     grid-template-columns: 1fr 1fr;
     width: 100%;
   }
 }
-
 @media (max-width: 730px) {
    .business-cards-container {
    grid-template-columns: 1fr;

@@ -22,7 +22,13 @@
       <%= tel_to "Call Now!", @business.phone_number, style: "font-size: 32px; color: white; font-weight: bold;" %>
     </div>
   </div>
-  <div class="show-map">
+<div class="show-map" id="delaymap" style="visibility:hidden;">
     <%= render 'shared/map' %>
   </div>
 </div>
+
+<script>
+  setTimeout(function () {
+    document.getElementById('delaymap').style.visibility = "visible";
+  }, 1000);
+</script>
