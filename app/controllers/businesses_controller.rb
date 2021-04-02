@@ -20,6 +20,15 @@ class BusinessesController < ApplicationController
   def show
     @business = Business.find(params[:id])
     authorize @business
+
+    @markers =
+      [{
+        lat: @business.latitude,
+        lng: @business.longitude,
+        infoWindow: render_to_string(partial: "info_window", locals: { business: @business }),
+        image_url: helpers.asset_url(@business.category.image)
+      }]
+
   end
 
   def new
