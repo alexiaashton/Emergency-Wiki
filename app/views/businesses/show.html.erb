@@ -9,7 +9,7 @@
   <div class="show-info">
     <div class="show-info-flex">
       <div class="show-info-description">
-        <h2><%= @business.name %></h2>
+        <h1><%= @business.name %></h1>
         <h3><%= @business.address %></h3>
         <p> Open until <%= @business.schedules.first.closes.strftime("%H:%M") %> </p>
         <h3><%= @business.phone_number %><h3>
@@ -18,10 +18,8 @@
         <%= image_tag @business.category.image, class: "show-image" %>
       </div>
     </div>
-    <div class="show-button">
-      <div class="button-big-red">
-        <%= tel_to "Call Now!", @business.phone_number, style: "font-size: 32px; color: white; font-weight: bold;" %>
-      </div>
+    <div id="show-button" class="button-big-red">
+      <%= tel_to "Call Now!", @business.phone_number, style: "font-size: 32px; color: white; font-weight: bold;" %>
     </div>
   </div>
   <div class="show-map">

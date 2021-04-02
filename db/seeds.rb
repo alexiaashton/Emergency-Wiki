@@ -83,7 +83,7 @@ pharmacie6 = Business.create!(
 
 pharmacie7 = Business.create!(
   name: 'Pharmacie de Riddes',
-  address: 'rue du faubourg 11, 1908 Riddes',
+  address: 'Riddes',
   phone_number: '079 473 33 50',
   comment: 'Please call before passing!',
   category: categorie_pharmacie,
@@ -125,6 +125,7 @@ pharmacie11 = Business.create!(
 pharmacie12 = Business.create!(
   name: 'Pharmacie Daniela ',
   address: 'Neuchatel',
+
   phone_number: '079 473 33 50',
   comment: 'Please call before passing!',
   category: categorie_pharmacie,
