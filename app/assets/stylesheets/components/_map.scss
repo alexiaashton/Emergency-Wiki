@@ -18,6 +18,10 @@
   justify-content: space-between;
 }
 
+a.mapboxgl-ctrl-logo {
+  z-index: 2;
+}
+
 /* @media (min-width: 1200px)
 .map {
   display: block;
