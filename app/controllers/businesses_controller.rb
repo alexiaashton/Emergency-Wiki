@@ -20,6 +20,13 @@ class BusinessesController < ApplicationController
   def show
     @business = Business.find(params[:id])
     authorize @business
+    @markers = [{
+      lat: @business.latitude,
+      lng: @business.longitude,
+      infoWindow: render_to_string(partial: "info_window", locals: { business: @business }),
+      image_url: helpers.asset_url(@business.category.image)
+    }]
+
   end
 
   def new
@@ -55,6 +62,8 @@ class BusinessesController < ApplicationController
   private
 
   def business_params
-    params.require(:business).permit(:name, :address, :phone_number, :comment, :category_id, :schedule_id, :user_id)
+    params.require(:business).permit(:name, :address, :phone_number, :comment, :category_id, :schedule_id, :user_id,:id)
   end
+
+
 end

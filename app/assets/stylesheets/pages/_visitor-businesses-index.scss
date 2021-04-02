@@ -1,6 +1,7 @@
  .business-index-container {
    display:flex;
    align-items: flex-start;
+   margin-top: 140px;
 
  }
 
@@ -9,13 +10,14 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
-    margin: 10px;
+    margin: 20px;
+    width: 50%;
 
 }
 
 .map-container-index {
   height: 100vh;
-  width: 60%;
+  width: 50%;
   position: sticky;
   top: 0;
   object-fit: cover;
@@ -24,17 +26,35 @@
 
 /*Media Queries*/
 
-/*Smallest device*/
-
-
-/*Small devices (landscape phones, 576px and up)*/
-@media (max-width: 737px)  {
-  .business-cards-container {
-    grid-template-columns: 1fr;
-  }
-  .map-container-index {
-    display: none;
+@media (max-width: 1430px) {
+   .business-cards-container {
+     grid-template-columns: 1fr;
+     justify-items: center;
   }
 }
 
-/*Medium devices (tablets, 768px and up)*/
+@media (max-width: 992px) {
+  .business-index-container {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 120px;
+  }
+  .map-container-index {
+    width: 100vw;
+    height: 50vh;
+  }
+
+  .business-cards-container {
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+  }
+}
+
+@media (max-width: 730px) {
+   .business-cards-container {
+   grid-template-columns: 1fr;
+   justify-items: center;
+  }
+}
+
+

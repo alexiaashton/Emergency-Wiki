@@ -1,6 +1,9 @@
 // put your style for the header here
 header {
   display: flex;
+  position: fixed;
+  top: 0;
+  z-index: 10;
   justify-content: space-between;
   align-items: center;
   padding: 10px;
