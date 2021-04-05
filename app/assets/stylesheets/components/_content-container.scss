@@ -1,5 +1,23 @@
 // use this class as container, in order to have the same margin on all components
 
 .content-container {
-  //margin: 20px;
+  margin: 20px;
+}
+
+.login-container {
+  background-color: $light-green;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 40px;
+  padding-bottom: 100px;
+  min-height: 100vh;
+  margin-bottom: -100px;
+}
+
+.form-control {
+  width: 300px;
+}
+
+.login-flex {
+
 }

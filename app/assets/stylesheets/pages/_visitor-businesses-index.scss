@@ -8,7 +8,6 @@
  .business-cards-container {
     //flex-grow: 1;
     display: grid;
-    grid-gap: 20px;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
     margin: 20px;
@@ -28,7 +27,7 @@
 
 /*Media Queries*/
 
-@media (max-width: 1430px) {
+@media (max-width: 1500px) {
    .business-cards-container {
      grid-template-columns: 1fr;
      justify-items: center;
