@@ -1,1 +1,45 @@
 // put your style for the users new business page here
+.add-business-form input[type="radio"] {
+  display: block;
+}
+
+.add-business-form input[type='radio']:after {
+        width: 40px;
+        height: 40px;
+        border-radius: 3px;
+        top: -5px;
+        left: -10px;
+        position: relative;
+        background-color: #d1d3d1;
+        content: '';
+        display: inline-block;
+        visibility: visible;
+        border: 2px solid white;
+    }
+
+.add-business-form input[type='radio']:checked:after {
+        width: 40px;
+        height: 40px;
+        border-radius: 3px;
+        top: -2px;
+        left: -1px;
+        position: relative;
+        background-color: #ffa500;
+        content: '';
+        display: inline-block;
+        visibility: visible;
+        border: 2px solid white;
+    }
+
+.add-business-form label {
+  margin-left: 20px;
+}
+
+.add-business-form {
+  font-size: 32px;
+}
+
+.new-business-container {
+  background-color: yellow;
+  margin: 20px;
+}
