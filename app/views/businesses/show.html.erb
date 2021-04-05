@@ -9,8 +9,8 @@
   <div class="show-info">
     <div class="show-info-flex">
       <div class="show-info-description">
-        <h1><%= @business.name %></h1>
-        <h3><%= @business.address %></h3>
+        <h1 id="show-title"><%= @business.name %></h1>
+        <h3 id="show-address"><%= @business.address %></h3>
         <p> Open until <%= @business.schedules.first.closes.strftime("%H:%M") %> </p>
         <h3><%= @business.phone_number %><h3>
       </div>
