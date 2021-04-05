@@ -21,8 +21,14 @@ class UsersController < ApplicationController
     end
   end
 
-  def update
-  end
+  # def edit
+  # end
+
+  # def update
+  #   @user = current_user
+  #   @business = Business.find(params[:user_id])
+  #   authorize @user
+  # end
 
   private
 
