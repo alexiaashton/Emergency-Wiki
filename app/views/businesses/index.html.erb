@@ -13,7 +13,8 @@
     <div class="businesses-cards">
       <div class="businesses-cards-info">
         <h5 style="font-size: 22px;"><%= business.name %></h5>
-        <p style="font-size: 18px; color: white; text-shadow: none; font-weight: normal;"><%= business.address %></p>
+        <p style="font-size: 18px; color: white; text-shadow: none; font-weight: normal;"><%= business.address.split(', ').first %></p>
+        <p style="font-size: 18px; color: white; text-shadow: none; font-weight: normal;"><%= business.address.split(', ').last %></p>
         <p style="font-size: 18px; color: white; text-shadow: none; font-weight: normal;">Open Until:
           <%= business.schedules.first.closes.strftime("%H:%M") %> on
           <%= business.schedules.first.closes.strftime("%d %B") %></p>

@@ -24,7 +24,12 @@
   padding-top: 20px;
 }
 .show-map {
-  height: 100vh;
+  height: calc(100vh - 140px - 48px);
+  width: 50%;
+  position: fixed;
+  top: 140;
+  right: 0;
+  object-fit: cover;
 }
 
 #show-button {
@@ -32,6 +37,10 @@
   justify-content: center;
   align-content: center;
   margin-top: 30px;
+}
+
+#phone-number-show {
+  margin-top: 16px;
 }
 
 @media (max-width: 992px) {
@@ -42,8 +51,9 @@
   margin-top: 100px;
   }
   .show-map {
-  width: 100vw;
-  height: 50vh !important;
+  height: 50vh;
+  width: 100%;
+  position: relative;
   }
   .show-info {
     text-align: center;
@@ -62,11 +72,11 @@
     display: none;
   }
   #show-title {
-    font-size: 40px;
+    font-size: 32px;
   }
 
   #show-address {
-    font-size: 32px;
+    font-size: 24px;
   }
 
   .show-map {

@@ -12,7 +12,7 @@
         <h1 id="show-title"><%= @business.name %></h1>
         <h3 id="show-address"><%= @business.address %></h3>
         <p> Open until <%= @business.schedules.first.closes.strftime("%H:%M") %> </p>
-        <h3><%= @business.phone_number %><h3>
+        <h3 id="phone-number-show"><%= @business.phone_number %><h3>
       </div>
       <div class="show-info-logo">
         <%= image_tag @business.category.image, class: "show-image" %>
