@@ -54,8 +54,8 @@ pharmacie3 = Business.create!(
 )
 
 pharmacie4 = Business.create!(
-  name: 'Amavita Pharmacie Gare',
-  address: 'Gare CFF Cornavin, 1201 Genève',
+  name: 'Pharmacie des Banques',
+  address: 'Rue du Stand 62, 1204 Genève',
   phone_number: '079 473 33 50',
   comment: 'Please call before passing!',
   category: categorie_pharmacie,
