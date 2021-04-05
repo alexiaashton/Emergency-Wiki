@@ -19,7 +19,7 @@
           <%= business.schedules.first.closes.strftime("%d %B") %></p>
       </div>
       <div class="businesses-cards-km">
-        <%= business.distance_from %>
+        <%= business.distance_from(@coordinates) %>
       </div>
     </div>
     <% end%>
