@@ -1,1 +1,48 @@
 // put your style for the users index page here
+.user-business-grid {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  grid-gap: 5px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  margin: 10px;
+}
+
+#welcome-user {
+  color:white;
+	font-size: 50px;
+	-webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: $dark-green;
+  text-shadow: 2px 2px 2px $main-green;
+}
+
+#manage{
+  font-weight: bold;
+  color: $dark-green;
+  text-shadow: 2px 2px 2px $light-green;
+}
+
+@media (max-width: 1460px) {
+   .user-business-grid {
+     grid-template-columns: 1fr 1fr 1fr;
+     justify-items: center;
+  }
+}
+
+@media (max-width: 1224px) {
+   .user-business-grid {
+     grid-template-columns: 1fr 1fr;
+     justify-items: center;
+  }
+}
+
+@media (max-width: 850px) {
+   .user-business-grid {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+  #welcome-user {
+    font-size: 2.1rem;
+  }
+}
