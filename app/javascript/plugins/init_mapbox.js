@@ -28,12 +28,12 @@ const fitMapToMarkers = (map, markers) => {
 };
 
 
-const zoomOnMarker = () => {
-  const business = document.getElementById("business-1050");
-  business.addEventListener("click", (event) => {
-    console.log(event.currentTarget);
-  });
-};
+// const zoomOnMarker = () => {
+//   const business = document.getElementById("business-1050");
+//   business.addEventListener("click", (event) => {
+//     console.log(event.currentTarget);
+//   });
+// };
 
 const initMapbox = () => {
   const mapElement = document.getElementById('map');
@@ -48,4 +48,5 @@ const initMapbox = () => {
   }
 };
 
-export { initMapbox, zoomOnMarker };
+export { initMapbox };
+// export { initMapbox, zoomOnMarker };
