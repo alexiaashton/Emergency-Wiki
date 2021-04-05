@@ -15,6 +15,7 @@ class BusinessesController < ApplicationController
         image_url: helpers.asset_url(business.category.image)
       }
     end
+
   end
 
   def show
