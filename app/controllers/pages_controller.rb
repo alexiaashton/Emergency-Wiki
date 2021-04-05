@@ -1,5 +1,5 @@
 class PagesController < ApplicationController
-  skip_before_action :authenticate_user!, only: [:home, :components]
+  skip_before_action :authenticate_user!, only: [:home, :components, :landing]
 
   def home
     if params[:query].present?
@@ -8,6 +8,9 @@ class PagesController < ApplicationController
       @businesses = Business.all
     end
     @categories = Category.all
+  end
+
+  def landing
   end
 
   def components

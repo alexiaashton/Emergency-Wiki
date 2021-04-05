@@ -24,3 +24,22 @@
     width: 100px;
   }
 }
+
+.landing-image{
+  width:200px;
+  margin-bottom:20px;
+  padding:5px;
+}
+
+
+@media (max-width: 480px) {
+  .landing-image {
+    width: 100px;
+  }
+}
+
+@media (max-width: 992px) {
+  .landing-image {
+    width: 160px;
+  }
+}

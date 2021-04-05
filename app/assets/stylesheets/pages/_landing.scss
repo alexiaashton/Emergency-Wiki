@@ -1,0 +1,73 @@
+.landing-container {
+  background: $main-green;
+  color: whitesmoke;
+  height: 100vh;
+  width: 100vw;
+  display: block;
+  text-align: center;
+
+}
+
+.landing-header {
+  padding-top: 30px;
+  text-align: center;
+  text-shadow: 3px 3px $dark-green;
+  animation: transitionIn 4s;
+}
+
+#subtitle {
+  margin-top: 20px;
+}
+
+.instructions {
+  margin: 10px;
+  padding-top: 30px;
+  line-height: 2.5;
+  animation: transitionIn 8s;
+  text-shadow: 2px 2px $dark-green;
+}
+
+.landing-btn {
+  background-color: transparent;
+  border: 1px solid whitesmoke;
+  padding: 24px 48px;
+  border-radius: 5px;
+  color: whitesmoke;
+  opacity: 0.6;
+  animation: pulse 1s ease infinite alternate;
+}
+
+.landing-btn:hover {
+  opacity: 1;
+  color: whitesmoke;
+  animation: none;
+  box-shadow: 0 0 5px lightgray
+}
+
+@keyframes transitionIn {
+  from {
+    opacity: 0;
+    margin-left: 0%;
+  }
+  to {
+    opacity: 1;
+    left: 100%;
+  }
+}
+
+@keyframes pulse {
+   0% {
+      opacity: .5;
+      box-shadow: 0 0 5px lightgray
+    }
+    50% {
+      opacity: .7;
+      box-shadow: 0 0 10px lightgray;
+    }
+    100% {
+      opacity: 1;
+      box-shadow: 0 0 5px lightgray;
+    }
+}
+
+
