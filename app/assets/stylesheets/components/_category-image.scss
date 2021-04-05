@@ -18,3 +18,9 @@
   width: 40px;
   height: 40px;
 }
+
+@media (max-width: 480px) {
+  .show-image {
+    width: 100px;
+  }
+}

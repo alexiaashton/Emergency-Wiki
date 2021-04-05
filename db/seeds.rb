@@ -28,7 +28,7 @@ puts '4 categories with name and images created'
 
 pharmacie1 = Business.create!(
   name: 'Pharmacie Sun Store Bussigny',
-  address: 'Bussigny',
+  address: 'Route Principale 5, 1030 Bussigny',
   phone_number: '079 473 33 50',
   comment: 'Please call before passing!',
   category: categorie_pharmacie,
