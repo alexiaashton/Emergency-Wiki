@@ -51,6 +51,10 @@ class BusinessesController < ApplicationController
     end
   end
 
+  def edit
+    @business = Business.find(params[:id])
+  end
+
   def update
     @business = Business.find(params[:id])
     @business.update(business_params)
