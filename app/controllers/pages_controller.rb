@@ -7,7 +7,6 @@ class PagesController < ApplicationController
     else
       @businesses = Business.all
     end
-    @categories = Category.all
   end
 
   def landing

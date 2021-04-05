@@ -2,21 +2,22 @@ class BusinessesController < ApplicationController
   skip_before_action :authenticate_user!, only: [:index, :show]
 
   def index
-    if params[:query].present?
+    if params[:query].present? && params[:category].present?
       @coordinates = Geocoder.search(params[:query]).first.coordinates
       @businesses = policy_scope(Business).where(category: params[:category]).near(params[:query])#, params[:km])
     else
-      @businesses = policy_scope(Business).where(category: params[:category])
+      @businesses = policy_scope(Business)
+      flash[:alert] = "You need to specify a location and category"
+      render "pages/home"
     end
     @markers = @businesses.geocoded.map do |business|
-      {
+        {
         lat: business.latitude,
         lng: business.longitude,
         infoWindow: render_to_string(partial: "info_window", locals: { business: business }),
         image_url: helpers.asset_url(business.category.image)
-      }
-    end
-
+        }
+      end
   end
 
   def show
