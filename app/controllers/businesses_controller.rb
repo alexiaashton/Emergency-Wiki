@@ -36,6 +36,7 @@ class BusinessesController < ApplicationController
     @user = User.find(params[:user_id])
     @business = Business.new
     authorize @business
+    @categories = Category.all
   end
 
   def create
