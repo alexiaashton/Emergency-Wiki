@@ -6,7 +6,7 @@
   grid-gap: 5px;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: auto;
-  padding: 10px;
+  padding-top: 10px;
 }
 
 #welcome-user {
@@ -15,6 +15,7 @@
 	-webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: $dark-green;
   text-shadow: 2px 2px 2px $main-green;
+  padding: 30px;
 }
 
 .margin-button{
@@ -92,7 +93,6 @@
     grid-template-columns: 1fr;
     justify-items: center;
     width: 100%;
-    padding: 3px;
   }
   #welcome-user {
     font-size: 2.1rem;
