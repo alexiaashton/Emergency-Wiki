@@ -27,6 +27,14 @@ const fitMapToMarkers = (map, markers) => {
   map.fitBounds(bounds, { padding: 70, maxZoom: 15, duration: 0 });
 };
 
+
+const zoomOnMarker = () => {
+  const business = document.getElementById("business-1050");
+  business.addEventListener("click", (event) => {
+    console.log(event.currentTarget);
+  });
+};
+
 const initMapbox = () => {
   const mapElement = document.getElementById('map');
   if (mapElement) {
@@ -36,7 +44,8 @@ const initMapbox = () => {
     addMarkerToMap(map, markers);
     fitMapToMarkers(map, markers);
 
+
   }
 };
 
-export { initMapbox };
+export { initMapbox, zoomOnMarker };
