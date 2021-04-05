@@ -1,6 +1,8 @@
 <div class="container text-center">
   <h1 id="welcome-user"> Welcome, <%= @user.username %> </h1>
-  <p id="manage">Manage your Businesses</p>
+  <div class="m-5">
+    <%= link_to "Add Another Health Service", new_user_business_path(@user), class: "manage" %>
+  </div>
 </div>
 <div class="user-business-grid">
   <% @business.each do |business| %>

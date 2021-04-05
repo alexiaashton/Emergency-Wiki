@@ -17,10 +17,19 @@
   text-shadow: 2px 2px 2px $main-green;
 }
 
-#manage{
-  font-weight: bold;
+.manage{
+  background-color: transparent;
+  border: 2px solid $main-green;
+  padding: 20px 40px;
+  border-radius: 5px;
+  color: $main-green;
+  opacity: 0.6;
+}
+
+.manage:hover {
+  opacity: 1;
   color: $dark-green;
-  text-shadow: 2px 2px 2px $light-green;
+  box-shadow: 2px 2px 2px $dark-green;
 }
 
 @media (max-width: 1460px) {

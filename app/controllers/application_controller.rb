@@ -8,7 +8,10 @@ class ApplicationController < ActionController::Base
     devise_parameter_sanitizer.permit(:sign_up, keys:[:user_name])
     devise_parameter_sanitizer.permit(:account_update, keys:[:user_name])
   end
-  
+
+  def after_sign_in_path_for(user)
+    users_path(user)
+  end
 
   # Pundit: white-list approach.
   after_action :verify_authorized, except: :index, unless: :skip_pundit?
