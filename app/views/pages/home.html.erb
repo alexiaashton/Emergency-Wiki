@@ -3,7 +3,7 @@
     <%= form_with url: businesses_path, method: :get, class: 'algolia-form' do |form| %>
     <%= text_field_tag :query, params[:query], placeholder: "Input the Location"%>
     <div class="category-boxes">
-      <% @categories.each do |category| %>
+      <% Category.all.each do |category| %>
       <div class="category-cards">
         <div class="category-cards-info">
           <label>
