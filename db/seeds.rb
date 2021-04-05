@@ -27,8 +27,8 @@ puts '4 categories with name and images created'
 
 
 pharmacie1 = Business.create!(
-  name: 'Pharmacie Sun Store Bussigny',
-  address: 'Route Principale 5, 1030 Bussigny',
+  name: 'Pharmacie de Chailly SA',
+  address: 'Avenue Bergières 42, 1004 Lausanne',
   phone_number: '079 473 33 50',
   comment: 'Please call before passing!',
   category: categorie_pharmacie,
@@ -36,8 +36,8 @@ pharmacie1 = Business.create!(
 )
 
 pharmacie2 = Business.create!(
-  name: 'Pharmacie Sun Store Lausanne',
-  address: 'Lausanne',
+  name: 'Sun Store',
+  address: 'Place de la Gare, 1003 Lausanne',
   phone_number: '079 473 33 50',
   comment: 'Please call before passing!',
   category: categorie_pharmacie,
@@ -45,8 +45,8 @@ pharmacie2 = Business.create!(
 )
 
 pharmacie3 = Business.create!(
-  name: 'Pharmacie Sun Store Renens',
-  address: 'Renens',
+  name: 'Pharma 24',
+  address: 'Boulevard de la Cluse 38, 1205 Genève',
   phone_number: '079 473 33 50',
   comment: 'Please call before passing!',
   category: categorie_pharmacie,
@@ -54,8 +54,8 @@ pharmacie3 = Business.create!(
 )
 
 pharmacie4 = Business.create!(
-  name: 'Pharmacie Sun Store Morges',
-  address: 'Morges',
+  name: 'Amavita Pharmacie Gare',
+  address: 'Gare CFF Cornavin, 1201 Genève',
   phone_number: '079 473 33 50',
   comment: 'Please call before passing!',
   category: categorie_pharmacie,
@@ -64,8 +64,8 @@ pharmacie4 = Business.create!(
 
 
 pharmacie5 = Business.create!(
-  name: 'Pharmacie  patate manmaw',
-  address: 'Genève',
+  name: 'Neustadt Apotheke',
+  address: 'Moosstrasse 26, 6003 Luzern',
   phone_number: '079 473 33 50',
   comment: 'Please call before passing!',
   category: categorie_pharmacie,
@@ -73,8 +73,8 @@ pharmacie5 = Business.create!(
 )
 
 pharmacie6 = Business.create!(
-  name: 'Pharmacie Marcelin',
-  address: 'Corbières, Fribourg/Freiburg, Suisse',
+  name: 'Medicus Apotheke AG',
+  address: 'Luzernerstrasse 30, 6010 Kriens',
   phone_number: '079 473 33 50',
   comment: 'Please call before passing!',
   category: categorie_pharmacie,
@@ -82,8 +82,8 @@ pharmacie6 = Business.create!(
 )
 
 pharmacie7 = Business.create!(
-  name: 'Pharmacie de Riddes',
-  address: 'Riddes',
+  name: 'Medbase Apotheke Bahnhof',
+  address: 'Bahnhofplatz 10, 2502 Biel',
   phone_number: '079 473 33 50',
   comment: 'Please call before passing!',
   category: categorie_pharmacie,
@@ -91,41 +91,40 @@ pharmacie7 = Business.create!(
 )
 
 pharmacie8 = Business.create!(
-  name: 'Pharmacie Daniela ',
-  address: 'Zurich',
+  name: 'Coop Vitality AG',
+  address: 'Salzhausstrasse 31, 2503 Biel',
   phone_number: '079 473 33 50',
   comment: 'Please call before passing!',
   category: categorie_pharmacie,
   user: user1,
 )
 pharmacie9 = Business.create!(
-  name: 'Pharmacie Daniela ',
-  address: 'Nyon',
+  name: 'TopPharm Apotheke',
+  address: 'Poststrasse 6, 8001 Zürich',
   phone_number: '079 473 33 50',
   comment: 'Please call before passing!',
   category: categorie_pharmacie,
   user: user1,
 )
 pharmacie10 = Business.create!(
-  name: 'Pharmacie Daniela ',
-  address: 'Genève',
+  name: 'Apotheke im Hauptbahnhof',
+  address: 'Bahnhofplatz 15, 8001 Zürich',
   phone_number: '079 473 33 50',
   comment: 'Please call before passing!',
   category: categorie_pharmacie,
   user: user1,
 )
 pharmacie11 = Business.create!(
-  name: 'Pharmacie Daniela ',
-  address: 'Lucern',
+  name: 'Saner Apotheke AG',
+  address: 'Viaduktstrasse 12, 4051 Basel',
   phone_number: '079 473 33 50',
   comment: 'Please call before passing!',
   category: categorie_pharmacie,
   user: user1,
 )
 pharmacie12 = Business.create!(
-  name: 'Pharmacie Daniela ',
-  address: 'Neuchatel',
-
+  name: 'Pharmacie du Soleil',
+  address: 'Rue du Seyon 1, 2000 Neuchatel',
   phone_number: '079 473 33 50',
   comment: 'Please call before passing!',
   category: categorie_pharmacie,
@@ -135,8 +134,8 @@ pharmacie12 = Business.create!(
 puts '12 pharmacies created'
 
 dentiste1 = Business.create!(
-  name: 'Dentiste 24 Bussigny',
-  address: 'Bussigny',
+  name: 'Label-dent',
+  address: 'Rue du Grand-Pont 2B, 1003 Lausanne',
   phone_number: '079 473 33 50',
   comment: 'Please call before passing!',
   category: categorie_dentiste,
@@ -144,8 +143,8 @@ dentiste1 = Business.create!(
 )
 
 dentiste2 = Business.create!(
-  name: 'Dentiste 24 Lausanne',
-  address: 'Lausanne',
+  name: 'Cabinet Dentaire Faivre',
+  address: 'Route d Oron 2, 1010 Lausanne',
   phone_number: '079 473 33 50',
   comment: 'Please call before passing!',
   category: categorie_dentiste,
@@ -153,8 +152,8 @@ dentiste2 = Business.create!(
 )
 
 dentiste3 = Business.create!(
-  name: 'Dentiste 24 Renens',
-  address: 'Renens',
+  name: 'Centre Médico-Dentaire Balexert Sàrl',
+  address: 'Avenue Louis-Casaï 27, 1209 Genève',
   phone_number: '079 473 33 50',
   comment: 'Please call before passing!',
   category: categorie_dentiste,
@@ -162,72 +161,72 @@ dentiste3 = Business.create!(
 )
 
 dentiste4 = Business.create!(
-  name: 'Dentiste 24 Morges',
-  address: 'Morges',
+  name: 'Citysmile Clinique Dentaire',
+  address: 'Boulevard de Saint-Georges 72, 1205 Genève',
   phone_number: '079 473 33 50',
   comment: 'Please call before passing!',
   category: categorie_dentiste,
   user: user2,
 )
 dentiste5 = Business.create!(
-  name: 'Dentiste MarcoChico',
-  address: 'Corbières, Fribourg/Freiburg, Suisse',
+  name: 'Neue Zahnklinik Seeland',
+  address: 'Rue Theodor-Kocher 11, 2502 Biel',
   phone_number: '079 473 33 50',
   comment: 'Please call before passing!',
   category: categorie_dentiste,
   user: user2,
 )
 dentiste6 = Business.create!(
-  name: 'Dentiste Michelandco',
-  address: 'Zurich',
+  name: 'Zahnarztpraxis Central',
+  address: 'Bahnhofstrasse 54, 2502 Biel',
   phone_number: '079 473 33 50',
   comment: 'Please call before passing!',
   category: categorie_dentiste,
   user: user2,
 )
 dentiste7 = Business.create!(
-  name: 'Kimboslice',
-  address: 'Neuchatel',
+  name: 'Brunner Praxis für Zahnmedizin',
+  address: 'Seidenhofstrasse 10, 6003 Luzern',
   phone_number: '079 473 33 50',
   comment: 'Please call before passing!',
   category: categorie_dentiste,
   user: user2,
 )
 dentiste8 = Business.create!(
-  name: 'Rodolph',
-  address: 'Bâle',
+  name: 'Clinique dentaire Sourire Plus SA',
+  address: 'Rue du Crêt-Taconnet 8a, 2000 Neuchâtel',
   phone_number: '079 473 33 50',
   comment: 'Please call before passing!',
   category: categorie_dentiste,
   user: user2,
 )
 dentiste9 = Business.create!(
-  name: 'Rodolph',
-  address: 'Corbières, Fribourg/Freiburg, Suisse',
+  name: 'Centre Médico Dentaire Neuchâtel',
+  address: 'Rue Saint-Maurice 4, 2000 Neuchâtel',
   phone_number: '079 473 33 50',
   comment: 'Please call before passing!',
   category: categorie_dentiste,
   user: user2,
 )
 dentiste10 = Business.create!(
-  name: 'Rodolph',
-  address: 'Bern',
+  name: 'Frei Marc',
+  address: 'Werkgasse 2, 3018 Bern',
   phone_number: '079 473 33 50',
   comment: 'Please call before passing!',
   category: categorie_dentiste,
   user: user2,
 )
 dentiste11 = Business.create!(
-  name: 'Rodolph',
-  address: 'Yverdon',
+  name: 'Schulzahnklinik Breitenrain',
+  address: 'Rodtmattstrasse 47, 3014 Bern',
   phone_number: '079 473 33 50',
   comment: 'Please call before passing!',
   category: categorie_dentiste,
   user: user2,
 )
 dentiste12 = Business.create!(
-  name: 'Rodolph',
-  address: 'Bâle',
+  name: 'Basel´s English-Swiss dentist',
+  address: 'St. Alban-Vorstadt 78, 4052 Basel',
   phone_number: '079 473 33 50',
   comment: 'Please call before passing!',
   category: categorie_dentiste,
@@ -237,8 +236,8 @@ dentiste12 = Business.create!(
 puts '12 dentists created'
 
 doctor1 = Business.create!(
-  name: 'Medecin de Bussigny SA',
-  address: 'Bussigny',
+  name: 'Cabinet Médical Brenn Steve',
+  address: 'Avenue Antoine-Michel-Servan 10, 1006 Lausanne',
   phone_number: '079 473 33 50',
   comment: 'Please call before passing!',
   category: categorie_medecin,
@@ -246,8 +245,8 @@ doctor1 = Business.create!(
 )
 
 doctor2 = Business.create!(
-  name: 'Medecin de Lausanne SA',
-  address: 'Lausanne',
+  name: 'Eisner, Harold Philippe',
+  address: 'Rue Caroline 3, 1003 Lausanne',
   phone_number: '079 473 33 50',
   comment: 'Please call before passing!',
   category: categorie_medecin,
@@ -255,8 +254,8 @@ doctor2 = Business.create!(
 )
 
 doctor3 = Business.create!(
-  name: 'Medecin de Renens SA',
-  address: 'Renens',
+  name: 'Cabinet médical du Mont-Blanc',
+  address: 'Rue du Mont-Blanc 20, 1201 Genève',
   phone_number: '079 473 33 50',
   comment: 'Please call before passing!',
   category: categorie_medecin,
@@ -264,8 +263,8 @@ doctor3 = Business.create!(
 )
 
 doctor4 = Business.create!(
-  name: 'Medecin de Morges SA',
-  address: 'Morges',
+  name: 'Dr. Jessie Lamouille',
+  address: 'Avenue de la Roseraie 76B, 1205 Genève',
   phone_number: '079 473 33 50',
   comment: 'Please call before passing!',
   category: categorie_medecin,
@@ -273,64 +272,64 @@ doctor4 = Business.create!(
 )
 
 doctor5 = Business.create!(
-  name: 'Medecin de Morges SA',
-  address: 'Montreux',
+  name: 'Arztpraxis Walser Thomas',
+  address: 'Zypressenstrasse 50, 8004 Zürich',
   phone_number: '079 473 33 50',
   comment: 'Please call before passing!',
   category: categorie_medecin,
   user: user3,
 )
 doctor6 = Business.create!(
-  name: 'Medecin de Morges SA',
-  address: 'Moudon',
+  name: 'mediX Notfallpraxis',
+  address: 'Badenerstrasse 41, 8004 Zürich',
   phone_number: '079 473 33 50',
   comment: 'Please call before passing!',
   category: categorie_medecin,
   user: user3,
 )
 doctor7 = Business.create!(
-  name: 'Medecin de Morges SA',
-  address: 'Bâle',
+  name: 'Peter, Roland',
+  address: 'Löwenstrasse 13, 6004 Luzern',
   phone_number: '079 473 33 50',
   comment: 'Please call before passing!',
   category: categorie_medecin,
   user: user3,
 )
 doctor8 = Business.create!(
-  name: 'Medecin de Morges SA',
-  address: 'Yverdon',
+  name: 'MTC Centre de santé Neuchâtel',
+  address: 'Rue des Terreaux 5, 2000 Neuchâtel',
   phone_number: '079 473 33 50',
   comment: 'Please call before passing!',
   category: categorie_medecin,
   user: user3,
 )
 doctor9 = Business.create!(
-  name: 'Medecin de Morges SA',
-  address: 'Lucern',
+  name: 'Kiel, Ralf',
+  address: 'Rue des Poteaux 8, 2000 Neuchâtel',
   phone_number: '079 473 33 50',
   comment: 'Please call before passing!',
   category: categorie_medecin,
   user: user3,
 )
 doctor10 = Business.create!(
-  name: 'Medecin de Morges SA',
-  address: 'Vevey',
+  name: 'Jacobs, Hanne',
+  address: 'Centralbahnstrasse 20, 4051 Basel',
   phone_number: '079 473 33 50',
   comment: 'Please call before passing!',
   category: categorie_medecin,
   user: user3,
 )
 doctor11 = Business.create!(
-  name: 'Medecin de Morges SA',
-  address: 'Sion, Valais/Wallis, Suisse',
+  name: 'Rösslein, Reinhold',
+  address: 'Hirzbodenweg 50, 4052 Basel',
   phone_number: '079 473 33 50',
   comment: 'Please call before passing!',
   category: categorie_medecin,
   user: user3,
 )
 doctor12 = Business.create!(
-  name: 'Medecin de Morges SA',
-  address: 'Nyon',
+  name: 'Hübscher, Eugen',
+  address: 'Rue du Général-Dufour 17, 2502 Biel',
   phone_number: '079 473 33 50',
   comment: 'Please call before passing!',
   category: categorie_medecin,
@@ -340,8 +339,8 @@ doctor12 = Business.create!(
 puts '12 doctors created'
 
 vet1 = Business.create!(
-  name: 'Veterinaire Bussigny SA',
-  address: 'Bussigny',
+  name: 'Medi-Vet SA',
+  address: 'Avenue de Montoie 47, 1007 Lausanne',
   phone_number: '079 473 33 50',
   comment: 'Please call before passing!',
   category: categorie_veterinaire,
@@ -349,8 +348,8 @@ vet1 = Business.create!(
 )
 
 vet2 = Business.create!(
-  name: 'Veterinaire Lausanne SA',
-  address: 'Lausanne',
+  name: 'Cabinet vétérinaire des Bergières',
+  address: 'Avenue Bergières 50, 1004 Lausanne',
   phone_number: '079 473 33 50',
   comment: 'Please call before passing!',
   category: categorie_veterinaire,
@@ -358,8 +357,8 @@ vet2 = Business.create!(
 )
 
 vet3 = Business.create!(
-  name: 'Veterinaire Renens SA',
-  address: 'Renens',
+  name: 'Vet 24',
+  address: 'Boulevard Carl-Vogt 38, 1205 Genève',
   phone_number: '079 473 33 50',
   comment: 'Please call before passing!',
   category: categorie_veterinaire,
@@ -367,72 +366,72 @@ vet3 = Business.create!(
 )
 
 vet4 = Business.create!(
-  name: 'Veterinaire Morges SA',
-  address: 'Morges',
+  name: 'Cabinet Vétérinaire des Sources SA',
+  address: 'Rue des Sources 10, 1205 Genève',
   phone_number: '079 473 33 50',
   comment: 'Please call before passing!',
   category: categorie_veterinaire,
   user: user4,
 )
 vet5 = Business.create!(
-  name: 'Veterinaire Montreux SA',
-  address: 'Montreux',
+  name: 'Amivet Sàrl',
+  address: 'Rue de l Ecluse 12, 2000 Neuchâtel',
   phone_number: '079 473 33 50',
   comment: 'Please call before passing!',
   category: categorie_veterinaire,
   user: user4,
 )
 vet6 = Business.create!(
-  name: 'Veterinaire Moudon SA',
-  address: 'Moudon',
+  name: 'Au Chat Bleu Sàrl',
+  address: 'Mettlenweg 17, 2504 Biel',
   phone_number: '079 473 33 50',
   comment: 'Please call before passing!',
   category: categorie_veterinaire,
   user: user4,
 )
 vet7 = Business.create!(
-  name: 'Veterinaire Morges SA',
-  address: 'Lucern',
+  name: 'Cabinet vétérinaire am Bahnhof',
+  address: 'Murtenstrasse 65, 2502 Biel',
   phone_number: '079 473 33 50',
   comment: 'Please call before passing!',
   category: categorie_veterinaire,
   user: user4,
 )
 vet8 = Business.create!(
-  name: 'Veterinaire Vevey SA',
-  address: 'Vevey',
+  name: 'Tierklinik Obergrund AG',
+  address: 'Schlossstrasse 11, 6005 Luzern',
   phone_number: '079 473 33 50',
   comment: 'Please call before passing!',
   category: categorie_veterinaire,
   user: user4,
 )
 vet9 = Business.create!(
-  name: 'Veterinaire  SA',
-  address: 'Neuchatel',
+  name: 'Kleintierklinik Oberstrass AG',
+  address: 'Spyristrasse 8, 8044 Zürich',
   phone_number: '079 473 33 50',
   comment: 'Please call before passing!',
   category: categorie_veterinaire,
   user: user4,
 )
 vet10 = Business.create!(
-  name: 'Veterinaire Vevey SA',
-  address: 'Sion, Valais/Wallis, Suisse',
+  name: 'Kleintierpraxis Sevogel',
+  address: 'Nauenstrasse 41, 4052 Basel',
   phone_number: '079 473 33 50',
   comment: 'Please call before passing!',
   category: categorie_veterinaire,
   user: user4,
 )
 vet11 = Business.create!(
-  name: 'Veterinaire Vevey SA',
-  address: 'Nyon',
+  name: 'Kleintierpraxis zur Steinenschanze',
+  address: 'Steinengraben 67, 4051 Basel',
   phone_number: '079 473 33 50',
   comment: 'Please call before passing!',
   category: categorie_veterinaire,
   user: user4,
 )
 vet12 = Business.create!(
-  name: 'Veterinaire Vevey SA',
-  address: 'Rolle',
+  name: 'Alternative Kleintiermedizin',
+  address: 'Nauenstrasse 41, 4052 Basel',
   phone_number: '079 473 33 50',
   comment: 'Please call before passing!',
   category: categorie_veterinaire,
@@ -442,8 +441,8 @@ puts '12 vets created'
 
 puts 'all schedules destroyed'
 
-Schedule.create!(opens: DateTime.new(2021,4,1,19,0,0), closes: DateTime.new(2021,4,2,7,0,0), business: pharmacie1)
 Schedule.create!(opens: DateTime.new(2021,4,1,19,0,0), closes: DateTime.new(2021,4,2,7,0,0), business: pharmacie2)
+Schedule.create!(opens: DateTime.new(2021,4,1,19,0,0), closes: DateTime.new(2021,4,2,7,0,0), business: pharmacie1)
 Schedule.create!(opens: DateTime.new(2021,4,1,19,0,0), closes: DateTime.new(2021,4,2,7,0,0), business: pharmacie3)
 Schedule.create!(opens: DateTime.new(2021,4,1,19,0,0), closes: DateTime.new(2021,4,2,7,0,0), business: pharmacie4)
 Schedule.create!(opens: DateTime.new(2021,4,1,19,0,0), closes: DateTime.new(2021,4,2,7,0,0), business: pharmacie5)

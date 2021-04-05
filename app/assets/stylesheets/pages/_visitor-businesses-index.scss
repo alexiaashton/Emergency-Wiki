@@ -6,8 +6,9 @@
  }
 
  .business-cards-container {
-    flex-grow: 1;
+    //flex-grow: 1;
     display: grid;
+    grid-gap: 20px;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
     margin: 20px;
@@ -16,10 +17,11 @@
 }
 
 .map-container-index {
-  height: 100vh;
+  height: calc(100vh - 140px - 48px);
   width: 50%;
-  position: sticky;
-  top: 0;
+  position: fixed;
+  top: 140;
+  right: 0;
   object-fit: cover;
 }
 
@@ -30,6 +32,10 @@
    .business-cards-container {
      grid-template-columns: 1fr;
      justify-items: center;
+  }
+
+  .map-container-index {
+    position: relative;
   }
 }
 
