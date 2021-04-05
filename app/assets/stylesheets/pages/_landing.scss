@@ -15,26 +15,33 @@
   animation: transitionIn 4s;
 }
 
+#subtitle {
+  margin-top: 20px;
+}
+
 .instructions {
+  margin: 10px;
   padding-top: 30px;
   line-height: 2.5;
-  animation: transitionIn 7s;
+  animation: transitionIn 8s;
   text-shadow: 2px 2px $dark-green;
 }
 
 .landing-btn {
   background-color: transparent;
   border: 1px solid whitesmoke;
-  padding: 8px 24px;
+  padding: 24px 48px;
   border-radius: 5px;
   color: whitesmoke;
   opacity: 0.6;
-  animation: pulse 1.5s ease infinite alternate;
+  animation: pulse 1s ease infinite alternate;
 }
 
 .landing-btn:hover {
   opacity: 1;
   color: whitesmoke;
+  animation: none;
+  box-shadow: 0 0 5px lightgray
 }
 
 @keyframes transitionIn {
