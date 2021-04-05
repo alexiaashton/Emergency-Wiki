@@ -1,6 +1,8 @@
 class UsersController < ApplicationController
   def index
-    @users = policy_scope(User)
+    @user = policy_scope(User)
+    @user = current_user
+    @business = Business.where(user_id: current_user)
   end
 
   def new
