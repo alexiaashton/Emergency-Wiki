@@ -3,6 +3,7 @@ class BusinessesController < ApplicationController
 
   def index
     if params[:query].present?
+      @coordinates = Geocoder.search(params[:query]).first.coordinates
       @businesses = policy_scope(Business).where(category: params[:category]).near(params[:query])#, params[:km])
     else
       @businesses = policy_scope(Business).where(category: params[:category])
@@ -15,6 +16,7 @@ class BusinessesController < ApplicationController
         image_url: helpers.asset_url(business.category.image)
       }
     end
+
   end
 
   def show

@@ -23,7 +23,7 @@ import "bootstrap";
 
 // Internal imports, e.g:
 import { initAutocomplete } from '../plugins/init_autocomplete';
-import { initMapbox } from '../plugins/init_mapbox';
+import { initMapbox, zoomOnMarker } from '../plugins/init_mapbox';
 import { initChangeColor } from '../pages/home_boxes';
 
 document.addEventListener('turbolinks:load', () => {
@@ -31,6 +31,7 @@ document.addEventListener('turbolinks:load', () => {
   initChangeColor();
   initMapbox();
   initAutocomplete();
+  zoomOnMarker();
 });
 
 
