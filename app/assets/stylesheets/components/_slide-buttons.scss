@@ -4,7 +4,7 @@
   $toggle-background-color-on: $dark-green;
 $toggle-background-color-off: $alert-red;
 $toggle-control-color: white;
-$toggle-width: 140px;
+$toggle-width: 100px;
 $toggle-height: 50px;
 $toggle-gutter: 5px;
 $toggle-radius: 50%;
@@ -44,7 +44,7 @@ $toggle-control-size: $toggle-height - ($toggle-gutter * 2);
   .control {
     position: absolute;
     top: 0;
-    right: 0;
+    right: -230px;
     height: $toggle-height;
     width: $toggle-width;
     border-radius: $toggle-radius;

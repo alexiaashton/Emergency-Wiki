@@ -4,19 +4,19 @@ class BusinessesController < ApplicationController
   def index
     if params[:query].present? && params[:category].present?
       @coordinates = Geocoder.search(params[:query]).first.coordinates
-      @businesses = Business.where(category: params[:category]).near(params[:query])#, params[:km])
+      @businesses = Business.where(category: params[:category]).near(params[:query]) #, params[:km])
+      @markers = @businesses.geocoded.map do |business|
+        {
+          lat: business.latitude,
+          lng: business.longitude,
+          infoWindow: render_to_string(partial: "info_window", locals: { business: business }),
+          image_url: helpers.asset_url(business.category.image)
+        }
+      end
     else
       flash[:alert] = "You need to specify a location and category"
       render "pages/home"
     end
-    @markers = @businesses.geocoded.map do |business|
-        {
-        lat: business.latitude,
-        lng: business.longitude,
-        infoWindow: render_to_string(partial: "info_window", locals: { business: business }),
-        image_url: helpers.asset_url(business.category.image)
-        }
-      end
   end
 
   def show
@@ -27,7 +27,6 @@ class BusinessesController < ApplicationController
       infoWindow: render_to_string(partial: "info_window", locals: { business: @business }),
       image_url: helpers.asset_url(@business.category.image)
     }]
-
   end
 
   def new
@@ -38,18 +37,10 @@ class BusinessesController < ApplicationController
     @business = Business.new(business_params)
     @business.user = current_user
     if @business.save
-      redirect_to users_path
+      redirect_to my_businesses_path
     else
       render :new
     end
-    # @user = User.find(params[:user_id])
-    # @business = Business.new(business_params)
-    # @business.user = current_user
-    # if @business.save
-    #   redirect_to users_index
-    # else
-    #   render :new
-    # end
   end
 
   def edit
@@ -76,6 +67,4 @@ class BusinessesController < ApplicationController
   def business_params
     params.require(:business).permit(:name, :address, :phone_number, :comment, :category_id, :schedule_id, :user_id, :id)
   end
-
-
 end
