@@ -1,19 +1,16 @@
 class UsersController < ApplicationController
   def index
-    @user = policy_scope(User)
     @user = current_user
     @business = Business.where(user_id: current_user)
   end
 
   def new
     @user = User.new
-    authorize @user
   end
 
   def create
     @user = User.new
     @user = User.create(user_params)
-    authorize @user
     if @user.save
       redirect_to users_path
     else
@@ -27,7 +24,6 @@ class UsersController < ApplicationController
   # def update
   #   @user = current_user
   #   @business = Business.find(params[:user_id])
-  #   authorize @user
   # end
 
   private
