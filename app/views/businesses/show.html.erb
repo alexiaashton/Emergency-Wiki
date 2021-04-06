@@ -23,9 +23,13 @@
       <%= tel_to "Call Now!", @business.phone_number, style: "font-size: 32px; color: white; font-weight: bold;" %>
     </div>
   </div>
-<div class="show-map" id="delaymap" style="visibility:hidden;">
+  <div class="show-map" id="delaymap" style="visibility:hidden;">
     <%= render 'shared/map' %>
   </div>
+  <% if current_user.present? %>
+    <%= link_to "Edit", class:"user-update-btn"
+        method: :update %>
+  <% end %>
 </div>
 
 <script>
