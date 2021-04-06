@@ -4,22 +4,25 @@
   grid-template-columns: 1fr 1fr;
   height: 100vh;
   margin-top: 140px;
+  position: relative;
 }
 .show-info-flex {
   display: inline-flex;
   justify-content: space-between;
+  width: 100%;
 }
 .show-info {
   margin: 70px;
 }
 .show-info-description {
   text-align: left;
+  width: 50%;
 }
 .show-info-logo {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
-  width: 100%;
+  width: 50%;
   height: 100%;
   padding-top: 20px;
 }
@@ -37,6 +40,8 @@
   justify-content: center;
   align-content: center;
   margin-top: 30px;
+  text-shadow: none;
+  font-weight: bold;
 }
 
 #phone-number-show {
@@ -44,12 +49,20 @@
   font-size: 24px;
 }
 
-@media (max-width: 992px) {
+  #gps-button {
+    position: absolute;
+    right: 20px;
+    bottom: 50px;
+    z-index: 10;
+    font-size: 20px;
+  }
+
+@media (max-width: 1300px) {
   .show-content-container {
   display: grid;
   grid-template-columns: 1fr;
   height: 100vh;
-  margin-top: 100px;
+  margin-top: 140px;
   }
   .show-map {
   height: 60vh;
@@ -70,6 +83,20 @@
   #show-address {
     font-size: 24px;
   }
+
+  #gps-button {
+    position: absolute;
+    left: 20px;
+    bottom: 70px;
+    z-index: 10;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 992px) {
+  .show-content-container {
+    margin-top: 100px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -89,6 +116,20 @@
   .show-map {
     height: 70vh;
   }
+
+  .show-info-description {
+    width: 70%
+  }
+
+  #gps-button {
+  position: absolute;
+  left: 20px;
+  bottom: 70px;
+  z-index: 10;
+  font-size: 14px;
+  }
 }
+
+
 
 
