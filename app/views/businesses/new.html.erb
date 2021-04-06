@@ -1,11 +1,33 @@
 <div class="new-business-container">
 <h1>business new</h1>
-<div class="add-business-form">
-<% Category.all.each do |category| %>
-  <label>
-    <input type="radio" name="category" value="<%= category.id %>">
-    <%= category.name %>
-  </label>
-  <% end %>
+  <div class="add-business-form">
+    <h3>You are a :</h3>
+  <% Category.all.each do |category| %>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="<%= category.id %>" checked>
+      <label class="form-check-label" for="exampleRadios1">
+      <%= category.name %>
+    </label>
+    </div>
+    <% end %>
+
+  </div>
+
+  <div class="slide-button">
+    <label class="toggle-control">
+      <input type="checkbox" checked="checked">
+      <span class="control"></span>
+    </label>
+  </div>
+
+<div class="mb-3">
+  <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="Sun Store Bla bla bla......">
+  <input type="phone_number" class="form-control" id="exampleFormControlInput1" placeholder="043 445 44 44">
+  <input type="schedules" class="form-control" id="exampleFormControlInput1" placeholder="Fr. 2.4.21 20:00 - Sa 3.4.21 07:00">
+
 </div>
+
+
+
 </div>
+
