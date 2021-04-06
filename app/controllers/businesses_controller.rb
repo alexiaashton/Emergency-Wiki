@@ -49,8 +49,11 @@ class BusinessesController < ApplicationController
 
   def update
     @business = Business.find(params[:id])
-    @business.update(business_params)
-    redirect_to user_business_path
+    if @business.update(business_params)
+      redirect_to my_businesses_path
+    else
+      render :new
+    end
   end
 
   def destroy

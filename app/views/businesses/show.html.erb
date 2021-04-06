@@ -3,7 +3,9 @@
     <i class="fas fa-arrow-alt-circle-left", id="back-arrow"></i>
   <% end %>
   <h1 id="visitors-title">Emergency Wiki</h1>
-  <%= link_to "Back to Home", root_path, class: "back-to-home-button" %>
+  <%= link_to root_path, class: "back-to-home-button" do %>
+  <i class="fas fa-home"></i>
+  <% end %>
 </header>
 <div class="show-content-container">
   <div class="show-info">
@@ -12,6 +14,7 @@
         <h1 id="show-title"><%= @business.name %></h1>
         <h3 id="show-address"><%= @business.address.split(', ').first %></h3>
         <h3 id="show-address"><%= @business.address.split(', ').last %></h3>
+        <p>Note: <%=  @business.comment%> </p>
         <p> Open until <%= @business.schedules.first.closes.strftime("%H:%M") %> </p>
         <h3 id="phone-number-show"><%= @business.phone_number %><h3>
       </div>
@@ -19,12 +22,19 @@
         <%= image_tag @business.category.image, class: "show-image" %>
       </div>
     </div>
-    <div id="show-button" class="button-big-red">
-      <%= tel_to "Call Now!", @business.phone_number, style: "font-size: 32px; color: white; font-weight: bold;" %>
-    </div>
+    <% if current_user.present? %>
+      <div class="button-big-green">
+          <%= link_to "Edit", edit_business_path(@business) %>
+      </div>
+    <% else %>
+       <div id="show-button" class="button-big-red">
+        <%= tel_to "Call Now!", @business.phone_number, style: "font-size: 32px; color: white; font-weight: bold;" %>
+      </div>
+    <% end %>
   </div>
-<div class="show-map" id="delaymap" style="visibility:hidden;">
+  <div class="show-map" id="delaymap" style="visibility:hidden;">
     <%= render 'shared/map' %>
+      <a class="button-small-red" id="gps-button" href="https://www.google.ch/maps/place/<%= @business.address.gsub(/[ ]/, '+') %>">GPS Guidance</a>
   </div>
 </div>
 
