@@ -1,8 +1,4 @@
 class UsersController < ApplicationController
-  def index
-    @user = current_user
-    @business = Business.where(user_id: current_user)
-  end
 
   def new
     @user = User.new

@@ -61,6 +61,11 @@ class BusinessesController < ApplicationController
     @business.destroy
   end
 
+  def my_businesses
+    @user = current_user
+    @business = Business.where(user: current_user)
+  end
+
   private
 
   def business_params
