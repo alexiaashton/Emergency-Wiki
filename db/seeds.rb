@@ -62,7 +62,6 @@ pharmacie4 = Business.create!(
   user: user1,
 )
 
-
 pharmacie5 = Business.create!(
   name: 'Neustadt Apotheke',
   address: 'Moosstrasse 26, 6003 Luzern',
@@ -454,7 +453,6 @@ Schedule.create!(opens: DateTime.new(2021,4,5,14,0,0), closes: DateTime.new(2021
 Schedule.create!(opens: DateTime.new(2021,4,5,14,0,0), closes: DateTime.new(2021,4,10,7,0,0), business: pharmacie11)
 Schedule.create!(opens: DateTime.new(2021,4,5,14,0,0), closes: DateTime.new(2021,4,10,7,0,0), business: pharmacie12)
 
-
 Schedule.create!(opens: DateTime.new(2021,4,5,14,0,0), closes: DateTime.new(2021,4,10,7,0,0), business: dentiste1)
 Schedule.create!(opens: DateTime.new(2021,4,5,14,0,0), closes: DateTime.new(2021,4,10,7,0,0), business: dentiste2)
 Schedule.create!(opens: DateTime.new(2021,4,5,14,0,0), closes: DateTime.new(2021,4,10,7,0,0), business: dentiste3)
@@ -467,10 +465,6 @@ Schedule.create!(opens: DateTime.new(2021,4,5,14,0,0), closes: DateTime.new(2021
 Schedule.create!(opens: DateTime.new(2021,4,5,14,0,0), closes: DateTime.new(2021,4,10,7,0,0), business: dentiste10)
 Schedule.create!(opens: DateTime.new(2021,4,5,14,0,0), closes: DateTime.new(2021,4,10,7,0,0), business: dentiste11)
 Schedule.create!(opens: DateTime.new(2021,4,5,14,0,0), closes: DateTime.new(2021,4,10,7,0,0), business: dentiste12)
-
-
-
-
 
 Schedule.create!(opens: DateTime.new(2021,4,5,14,0,0), closes: DateTime.new(2021,4,10,7,0,0), business: doctor1)
 Schedule.create!(opens: DateTime.new(2021,4,5,14,0,0), closes: DateTime.new(2021,4,10,7,0,0), business: doctor2)
@@ -485,8 +479,6 @@ Schedule.create!(opens: DateTime.new(2021,4,5,14,0,0), closes: DateTime.new(2021
 Schedule.create!(opens: DateTime.new(2021,4,5,14,0,0), closes: DateTime.new(2021,4,10,7,0,0), business: doctor11)
 Schedule.create!(opens: DateTime.new(2021,4,5,14,0,0), closes: DateTime.new(2021,4,10,7,0,0), business: doctor12)
 
-
-
 Schedule.create!(opens: DateTime.new(2021,4,5,14,0,0), closes: DateTime.new(2021,4,10,7,0,0), business: vet1)
 Schedule.create!(opens: DateTime.new(2021,4,5,14,0,0), closes: DateTime.new(2021,4,10,7,0,0), business: vet2)
 Schedule.create!(opens: DateTime.new(2021,4,5,14,0,0), closes: DateTime.new(2021,4,10,7,0,0), business: vet3)
@@ -499,8 +491,5 @@ Schedule.create!(opens: DateTime.new(2021,4,5,14,0,0), closes: DateTime.new(2021
 Schedule.create!(opens: DateTime.new(2021,4,5,14,0,0), closes: DateTime.new(2021,4,10,7,0,0), business: vet10)
 Schedule.create!(opens: DateTime.new(2021,4,5,14,0,0), closes: DateTime.new(2021,4,10,7,0,0), business: vet11)
 Schedule.create!(opens: DateTime.new(2021,4,5,14,0,0), closes: DateTime.new(2021,4,10,7,0,0), business: vet12)
-
-
-
 
 puts '48 schedules created'
