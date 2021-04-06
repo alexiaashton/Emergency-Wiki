@@ -7,6 +7,41 @@
   width: 80%;
 }
 
+#query {
+  background-color: #F5F5F5;
+  height: 60px;
+  border-radius: 5px;
+  border-color: $main-green;
+  border-width: 2px;
+  box-shadow: 1px 1px 1px rgba(77, 172, 146, 0.5);
+}
+
+.ap-input {
+  //font-weight: bold;
+}
+
+.ap-input-icon svg {
+  height: 40px !important;
+  fill: $dark-green;
+  padding-bottom: -20px;
+  top: 100%;
+}
+
+.ap-input:hover ~ .ap-input-icon svg, .ap-input:focus ~ .ap-input-icon svg, .ap-input-icon:hover svg {
+    fill: $dark-green;
+}
+
+.ap-suggestion-icon svg {
+    fill: $main-green;
+}
+
+.ap-cursor .ap-suggestion-icon svg {
+    fill: $dark-green;
+}
+
+.ap-input-icon:hover svg {
+  fill: $main-green !important;
+}
 
 input[type="submit" i] {
   border-style: none;
