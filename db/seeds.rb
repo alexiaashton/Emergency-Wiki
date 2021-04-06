@@ -13,7 +13,6 @@ user1 = User.create!(username:"Pharmacie-Sun-Store-SA", password:"123456", email
 user2 = User.create!(username:"Dentiste-24-SA", password:"123456", email:"info@dentiste-24.ch")
 user3 = User.create!(username:"Permanence-de-Gare-SA", password:"123456", email:"info@permanence-de-gare.ch")
 user4 = User.create!(username:"Veterinaires-sans-limites-SA", password:"123456", email:"info@veterinaires-sans-limites.ch")
-user5 = User.create!(username:"Admin", password:"123456", email:"admin@wiki-emergency.ch", admin: true)
 
 puts '4 users created'
 

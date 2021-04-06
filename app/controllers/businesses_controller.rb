@@ -4,9 +4,8 @@ class BusinessesController < ApplicationController
   def index
     if params[:query].present? && params[:category].present?
       @coordinates = Geocoder.search(params[:query]).first.coordinates
-      @businesses = policy_scope(Business).where(category: params[:category]).near(params[:query])#, params[:km])
+      @businesses = Business.where(category: params[:category]).near(params[:query])#, params[:km])
     else
-      @businesses = policy_scope(Business)
       flash[:alert] = "You need to specify a location and category"
       render "pages/home"
     end
@@ -22,7 +21,6 @@ class BusinessesController < ApplicationController
 
   def show
     @business = Business.find(params[:id])
-    authorize @business
     @markers = [{
       lat: @business.latitude,
       lng: @business.longitude,
@@ -35,7 +33,6 @@ class BusinessesController < ApplicationController
   def new
     @user = User.find(params[:user_id])
     @business = Business.new
-    authorize @business
     @categories = Category.all
   end
 
@@ -43,7 +40,6 @@ class BusinessesController < ApplicationController
     @user = User.find(params[:user_id])
     @business = Business.new(business_params)
     @business.user = current_user
-    authorize @business
     if @business.save
       redirect_to users_index
     else
@@ -58,13 +54,11 @@ class BusinessesController < ApplicationController
   def update
     @business = Business.find(params[:id])
     @business.update(business_params)
-    authorize @business
     redirect_to user_business_path
   end
 
   def destroy
     @business.destroy
-    authorize @business
   end
 
   private
