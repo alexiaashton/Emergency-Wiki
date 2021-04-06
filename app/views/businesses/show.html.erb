@@ -19,17 +19,19 @@
         <%= image_tag @business.category.image, class: "show-image" %>
       </div>
     </div>
-    <div id="show-button" class="button-big-red">
-      <%= tel_to "Call Now!", @business.phone_number, style: "font-size: 32px; color: white; font-weight: bold;" %>
-    </div>
+    <% if current_user.present? %>
+      <div class="button-big-green">
+          <%= link_to "Edit", edit_business_path(@business) %>
+      </div>
+    <% else %>
+       <div id="show-button" class="button-big-red">
+        <%= tel_to "Call Now!", @business.phone_number, style: "font-size: 32px; color: white; font-weight: bold;" %>
+      </div>
+    <% end %>
   </div>
   <div class="show-map" id="delaymap" style="visibility:hidden;">
     <%= render 'shared/map' %>
   </div>
-  <% if current_user.present? %>
-    <%= link_to "Edit", class:"user-update-btn"
-        method: :update %>
-  <% end %>
 </div>
 
 <script>

@@ -4,9 +4,7 @@ Rails.application.routes.draw do
 
   get 'components', to: 'pages#components'
   get 'home', to: 'pages#home'
-  resources :users, only: [:index, :new, :create, :update, :destroy] do
-    resources :businesses, only: [:new, :create]
-  end
-  resources :businesses, only: [ :index, :show, :update, :destroy ]
+  resources :users, only: [:index, :new, :create, :update, :destroy]
+  resources :businesses, only: [:index, :show, :new, :create, :edit, :update, :destroy ]
   get 'my_businesses', to: 'businesses#my_businesses'
 end
