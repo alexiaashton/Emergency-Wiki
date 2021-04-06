@@ -1,5 +1,32 @@
 <div class="new-business-container">
 <h1>business new</h1>
+<%= simple_form_for @business do |f| %>
+  <%= f.input :name %>
+  <%= f.input :address %>
+  <%= f.input :phone_number %>
+  <%= f.input :comment %>
+  <%= f.association :category, as: :radio_buttons %>
+  <%= f.submit class: "btn btn-success" %>
+<% end %>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   <div class="add-business-form">
     <h3>You are a :</h3>
   <% Category.all.each do |category| %>

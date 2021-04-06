@@ -2,7 +2,7 @@
 
   <h1 id="welcome-user"> Welcome, <%= @user.username %> </h1>
   <div class="margin-button">
-    <%= link_to "Add A New Business", new_user_business_path(@user), class: "manage" %>
+    <%= link_to "Add A New Business", new_business_path, class: "manage" %>
   </div>
 </div>
 <div class="user-business-grid">

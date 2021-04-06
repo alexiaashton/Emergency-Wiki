@@ -5,8 +5,6 @@ Rails.application.routes.draw do
   get 'components', to: 'pages#components'
   get 'home', to: 'pages#home'
   get 'businesses/users'
-  resources :users, only: [:index, :new, :create, :update, :destroy] do
-    resources :businesses, only: [:new, :create]
-  end
-  resources :businesses, only: [ :index, :show, :update, :destroy ]
+  resources :users, only: [:index, :new, :create, :update, :destroy]
+  resources :businesses, only: [ :index, :show, :new, :create, :update, :destroy ]
 end

@@ -31,20 +31,25 @@ class BusinessesController < ApplicationController
   end
 
   def new
-    @user = User.find(params[:user_id])
     @business = Business.new
-    @categories = Category.all
   end
 
   def create
-    @user = User.find(params[:user_id])
     @business = Business.new(business_params)
     @business.user = current_user
     if @business.save
-      redirect_to users_index
+      redirect_to users_path
     else
       render :new
     end
+    # @user = User.find(params[:user_id])
+    # @business = Business.new(business_params)
+    # @business.user = current_user
+    # if @business.save
+    #   redirect_to users_index
+    # else
+    #   render :new
+    # end
   end
 
   def edit
@@ -64,7 +69,7 @@ class BusinessesController < ApplicationController
   private
 
   def business_params
-    params.require(:business).permit(:name, :address, :phone_number, :comment, :category_id, :schedule_id, :user_id,:id)
+    params.require(:business).permit(:name, :address, :phone_number, :comment, :category_id, :schedule_id, :user_id, :id)
   end
 
 
