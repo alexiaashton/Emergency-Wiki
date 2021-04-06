@@ -9,6 +9,6 @@ class ApplicationController < ActionController::Base
   end
 
   def after_sign_in_path_for(user)
-    users_path(user)
+    my_businesses_path
   end
 end
