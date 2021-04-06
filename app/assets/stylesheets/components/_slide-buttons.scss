@@ -44,7 +44,7 @@ $toggle-control-size: $toggle-height - ($toggle-gutter * 2);
   .control {
     position: absolute;
     top: 0;
-    left: 0;
+    right: 0;
     height: $toggle-height;
     width: $toggle-width;
     border-radius: $toggle-radius;
