@@ -2,7 +2,7 @@
 
   <h1 id="welcome-user"> Welcome, <%= @user.username %> </h1>
   <div class="margin-button">
-    <%= link_to "Add A New Business", new_user_business_path(@user), class: "manage" %>
+    <%= link_to "Add A New Business", new_business_path, class: "manage" %>
   </div>
 </div>
 <div class="user-business-grid">
@@ -15,7 +15,7 @@
       </div>
       <div class="user-businesses-cards-logo">
         <%= image_tag business.category.image, class: "users-business-image" %>
-        <%= link_to "Update", business_path(@user), class:"user-update-btn" %>
+        <%= link_to "Details", business_path(@user), class:"user-update-btn" %>
       </div>
     </div>
   <% end %>
