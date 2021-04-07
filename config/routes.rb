@@ -8,5 +8,6 @@ Rails.application.routes.draw do
   resources :businesses, only: [ :index, :show, :new, :create, :edit, :update, :destroy ]do
     resources :schedules, only: [:new, :create]
   end
+  resources :schedules, only: :destroy
   get 'my_businesses', to: 'businesses#my_businesses'
 end
