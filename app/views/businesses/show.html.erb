@@ -38,7 +38,7 @@
     <% if current_user.present? %>
       <%= link_to "Edit", edit_business_path(@business), class: "button-big-green", style: "font-size: 32px; color: white; font-weight: bold; margin: 20px;" %>
     <% else %>
-        <%= tel_to "Call Now!", @business.phone_number, class: "button-big-red", style: "font-size: 32px; color: white; font-weight: bold; margin: 20px;" %>
+        <%= tel_to "Call Now!", @business.phone_number, class: "button-big-red", id: "blinking-show" %>
     <% end %>
   </div>
   <div class="show-map" id="delaymap" style="visibility:hidden;">
