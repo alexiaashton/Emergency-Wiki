@@ -10,7 +10,7 @@
   <% end %>
   <h1 id="visitors-title">Emergency Wiki</h1>
   <% if current_user.present? %>
-  <%= link_to root_path, style: "display: hidden;" %>
+  <%= link_to "", root_path %>
   <% else %>
     <%= link_to root_path, class: "back-to-home-button" do %>
       <i class="fas fa-home"></i>

@@ -8,12 +8,12 @@
 </header>
 
 
-<div class="new-business-container">
-  <h2>Update Your Info</h2>
+<div class="update-business-container">
+  <h2 class="new-business-title">Update Your Info</h2>
 
   <div class="add-business-form">
     <%= simple_form_for @business do |f| %>
-        <h3>You are a :</h3>
+        <h3 class="new-business-subtitle">You are a :</h3>
       <%= f.association :category, as: :radio_buttons %>
       <%= f.input :name %>
       <%= f.input :address %>
