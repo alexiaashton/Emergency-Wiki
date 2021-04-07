@@ -1,7 +1,11 @@
 <footer>
     <span>© Emergency Wiki, 2021</span>
     <% if user_signed_in? %>
+    <div>
+      <%= link_to "Edit", my_businesses_path(@user), class: "login", style: "padding-right: 10px;" %>
       <%= link_to "Logout", destroy_user_session_path, class: "login", :method => :delete %>
+    </div>
+
     <% else %>
       <%= link_to "Pro? Login", new_user_session_path, class: "login" %>
     <% end %>
