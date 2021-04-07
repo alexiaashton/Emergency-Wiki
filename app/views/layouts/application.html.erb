@@ -18,7 +18,9 @@
   <body>
     <%= render 'shared/flashes' %>
     <%= yield %>
-    <%= render 'shared/footer' %>
+    <% unless action_name == "landing" || params[:controller] == "devise/sessions" || params[:controller] == "devise/passwords" %>
+      <%= render 'shared/footer' %>
+    <% end %>
   </body>
 </html>
 
