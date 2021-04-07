@@ -55,6 +55,7 @@
     bottom: 50px;
     z-index: 10;
     font-size: 20px;
+    animation: pulsing 1300ms infinite;
   }
 
 @media (max-width: 1300px) {
@@ -90,6 +91,7 @@
     bottom: 70px;
     z-index: 10;
     font-size: 14px;
+    animation: pulsing 1300ms infinite;
   }
 }
 
@@ -127,9 +129,46 @@
   bottom: 70px;
   z-index: 10;
   font-size: 14px;
+  animation: pulsing 1300ms infinite;
   }
 }
 
+#blinking-show{
+  font-size: 32px;
+  color: white;
+  font-weight: bold;
+  margin: 20px;
+  animation: pulsing 1300ms infinite;
+}
 
+@keyframes glowing {
+  0% {
+    background-color: $alert-red;
+    box-shadow: 0 0 5px $alert-red;
+  }
+  50% {
+    background-color: red;
+    box-shadow: 0 0 20px red;
+  }
+  100% {
+    background-color:  #f80303;
+    box-shadow: 0 0 5px #f80303;
+  }
+}
+
+@keyframes pulsing {
+  0% {
+    background-color: $alert-red;
+    box-shadow: 0 0 5px $alert-red;
+  }
+  50% {
+    background-color: $alert-red;
+    box-shadow: 0 0 20px $alert-red;
+  }
+  100% {
+    background-color:  $alert-red;
+    box-shadow: 0 0 5px $alert-red;
+  }
+}
 
 
