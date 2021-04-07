@@ -4,7 +4,7 @@ class BusinessesController < ApplicationController
   def index
     if params[:query].present? && params[:category].present?
       @coordinates = Geocoder.search(params[:query]).first.coordinates
-      @businesses = Business.where(category: params[:category]).near(params[:query]) #, params[:km])
+      @businesses = Business.where(category: params[:category]).near(params[:query], params[:km])
       @markers = @businesses.geocoded.map do |business|
         {
           lat: business.latitude,
@@ -50,7 +50,7 @@ class BusinessesController < ApplicationController
   def update
     @business = Business.find(params[:id])
     if @business.update(business_params)
-      redirect_to my_businesses_path
+      redirect_to business_path(@business)
     else
       render :new
     end
