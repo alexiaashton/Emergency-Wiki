@@ -1,0 +1,21 @@
+<header>
+  <%= link_to my_businesses_path(@users) do %>
+  <i class="fas fa-arrow-alt-circle-left" , id="back-arrow"></i>
+  <% end %>
+  <h1 id="visitors-title">Emergency Wiki</h1>
+  <%= image_tag "emergency-wiki-logo.png", id:"logo" %>
+</header>
+
+<div class="new-business-container">
+  <h2>Enter your Opening-Hours</h2>
+  <div class="add-business-form">
+    <%= simple_form_for [@business, @schedule] do |f| %>
+      <h3>You are :</h3>
+      <%= f.input :opens %>
+      <%= f.input :closes %>
+      <%= f.submit class: "button-medium-green" %>
+    <% end %>
+  </div>
+
+
+</div>
