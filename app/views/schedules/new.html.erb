@@ -10,8 +10,8 @@
   <h2 class="new-business-title">Enter your Opening-Hours</h2>
   <div class="add-schedule-form">
     <%= simple_form_for [@business, @schedule] do |f| %>
-      <%= f.input :opens %>
-      <%= f.input :closes %>
+      <%= f.input :opens, as: :datetime, html5: true %>
+      <%= f.input :closes, as: :datetime, html5: true %>
       <%= f.submit class: "button-medium-green" %>
     <% end %>
   </div>
