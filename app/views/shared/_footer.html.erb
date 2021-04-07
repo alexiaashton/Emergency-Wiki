@@ -1,5 +1,7 @@
 <footer>
-    <span>© Emergency Wiki, 2021</span>
+  <%= link_to root_path, class: "home-icon" do %>
+  <i class="fas fa-home"></i>
+  <% end %>
     <% if user_signed_in? %>
     <div>
       <%= link_to "Edit", my_businesses_path(@user), class: "login", style: "padding-right: 10px;" %>

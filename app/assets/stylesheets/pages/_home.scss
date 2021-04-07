@@ -2,6 +2,7 @@
 .algolia-places {
   max-width: 80%;
   display: inline !important;
+  justify-content: center;
 }
 
 .search{
@@ -17,9 +18,7 @@
   border-color: $main-green;
   border-width: 2px;
   border-radius: 5px;
-  margin-left: 10px;
 }
-
 .algolia-form{
   max-width: 80%;
 }
@@ -43,7 +42,6 @@
   fill: $dark-green;
   padding-bottom: -40px;
   top: 40%;
-
 }
 
 .ap-input:hover ~ .ap-input-icon svg, .ap-input:focus ~ .ap-input-icon svg, .ap-input-icon:hover svg {

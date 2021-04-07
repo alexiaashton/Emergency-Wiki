@@ -7,6 +7,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 10px;
+  padding-right: 20px;
   background-color: $light-green;
   width: 100vw;
   height: 100px;
@@ -20,8 +21,13 @@ header {
   }
 }
 
+#home-logo {
+  width: 80px;
+}
+
 #logo {
   width: 80px;
+  display: none;
 }
 
 #title {
@@ -38,6 +44,11 @@ header {
 
   #logo {
   width: 120px;
+  display: none;
+  }
+
+  #home-logo {
+    width: 120px;
   }
 
   header h1 {
