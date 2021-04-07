@@ -36,6 +36,7 @@ class BusinessesController < ApplicationController
   def create
     @business = Business.new(business_params)
     @business.user = current_user
+    @schedule = Schedule.new(business_params)
     if @business.save
       redirect_to my_businesses_path
     else
