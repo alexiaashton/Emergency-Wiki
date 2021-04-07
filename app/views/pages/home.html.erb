@@ -4,11 +4,10 @@
       <div class="search-bar">
         <%= form_with url: businesses_path, method: :get, class: 'algolia-form' do |form| %>
         <%= text_field_tag :query,
-        params[:query], placeholder: "Input the Location"%>
+        params[:query],
+        placeholder: "Input the Location" %>
       </div>
-      <div>
-        <%= select_tag :km, options_for_select([5, 10, 20, 30, 50, 100, 500]), class: "form-control", id: "km" %>
-      </div>
+      <%= select_tag :km, options_for_select([5, 10, 20, 30, 50, 100, 500]), class: "form-control", id: "km" %>
     </div>
   </div>
   <div class="category-boxes">
