@@ -9,7 +9,6 @@
   <h2 class="new-business-title">Enter your Data</h2>
   <div class="add-business-form">
     <%= simple_form_for @business do |f| %>
-        <h3 class="new-business-subtitle">You are a :</h3>
       <%= f.association :category, as: :radio_buttons %>
       <%= f.input :name %>
       <%= f.input :address %>
