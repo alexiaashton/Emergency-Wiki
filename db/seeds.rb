@@ -34,7 +34,7 @@ pharmacie1 = Business.create!(
   category: categorie_pharmacie,
   user: user1,
 )
-#
+
 pharmacie2 = Business.create!(
   name: 'Sun Store',
   address: 'Place de la Gare, 1003 Lausanne',
@@ -43,7 +43,7 @@ pharmacie2 = Business.create!(
   category: categorie_pharmacie,
   user: user1,
 )
-#
+
 pharmacie3 = Business.create!(
   name: 'Pharma 24',
   address: 'Boulevard de la Cluse 38, 1205 Genève',
@@ -52,7 +52,7 @@ pharmacie3 = Business.create!(
   category: categorie_pharmacie,
   user: user1,
 )
-#
+
 pharmacie4 = Business.create!(
   name: 'Pharmacie des Banques',
   address: 'Rue du Stand 62, 1204 Genève',
@@ -61,8 +61,7 @@ pharmacie4 = Business.create!(
   category: categorie_pharmacie,
   user: user1,
 )
-#
-#
+
 pharmacie5 = Business.create!(
   name: 'Neustadt Apotheke',
   address: 'Moosstrasse 26, 6003 Luzern',
@@ -71,7 +70,7 @@ pharmacie5 = Business.create!(
   category: categorie_pharmacie,
   user: user1,
 )
-#
+
 pharmacie6 = Business.create!(
   name: 'Medicus Apotheke AG',
   address: 'Luzernerstrasse 30, 6010 Kriens',
@@ -80,7 +79,7 @@ pharmacie6 = Business.create!(
   category: categorie_pharmacie,
   user: user1,
 )
-#
+
 pharmacie7 = Business.create!(
   name: 'Medbase Apotheke Bahnhof',
   address: 'Bahnhofplatz 10, 2502 Biel',
@@ -89,7 +88,7 @@ pharmacie7 = Business.create!(
   category: categorie_pharmacie,
   user: user1,
 )
-#
+
 pharmacie8 = Business.create!(
   name: 'Coop Vitality AG',
   address: 'Salzhausstrasse 31, 2503 Biel',
@@ -130,9 +129,9 @@ pharmacie12 = Business.create!(
   category: categorie_pharmacie,
   user: user1,
 )
-#
+
 puts '12 pharmacies created'
-#
+
 dentiste1 = Business.create!(
   name: 'Label-dent',
   address: 'Rue du Grand-Pont 2B, 1003 Lausanne',
@@ -141,7 +140,7 @@ dentiste1 = Business.create!(
   category: categorie_dentiste,
   user: user2,
 )
-#
+
 dentiste2 = Business.create!(
   name: 'Cabinet Dentaire Faivre',
   address: 'Route d Oron 2, 1010 Lausanne',
@@ -150,7 +149,7 @@ dentiste2 = Business.create!(
   category: categorie_dentiste,
   user: user2,
 )
-#
+
 dentiste3 = Business.create!(
   name: 'Centre Médico-Dentaire Balexert Sàrl',
   address: 'Avenue Louis-Casaï 27, 1209 Genève',
@@ -159,7 +158,7 @@ dentiste3 = Business.create!(
   category: categorie_dentiste,
   user: user2,
 )
-#
+
 dentiste4 = Business.create!(
   name: 'Citysmile Clinique Dentaire',
   address: 'Boulevard de Saint-Georges 72, 1205 Genève',
@@ -232,9 +231,9 @@ dentiste12 = Business.create!(
   category: categorie_dentiste,
   user: user2,
 )
-#
+
 puts '12 dentists created'
-#
+
 doctor1 = Business.create!(
   name: 'Cabinet Médical Brenn Steve',
   address: 'Avenue Antoine-Michel-Servan 10, 1006 Lausanne',
@@ -243,7 +242,7 @@ doctor1 = Business.create!(
   category: categorie_medecin,
   user: user3,
 )
-#
+
 doctor2 = Business.create!(
   name: 'Eisner, Harold Philippe',
   address: 'Rue Caroline 3, 1003 Lausanne',
@@ -252,7 +251,7 @@ doctor2 = Business.create!(
   category: categorie_medecin,
   user: user3,
 )
-#
+
 doctor3 = Business.create!(
   name: 'Cabinet médical du Mont-Blanc',
   address: 'Rue du Mont-Blanc 20, 1201 Genève',
@@ -261,7 +260,7 @@ doctor3 = Business.create!(
   category: categorie_medecin,
   user: user3,
 )
-#
+
 doctor4 = Business.create!(
   name: 'Dr. Jessie Lamouille',
   address: 'Avenue de la Roseraie 76B, 1205 Genève',
@@ -270,7 +269,7 @@ doctor4 = Business.create!(
   category: categorie_medecin,
   user: user3,
 )
-#
+
 doctor5 = Business.create!(
   name: 'Arztpraxis Walser Thomas',
   address: 'Zypressenstrasse 50, 8004 Zürich',
@@ -335,9 +334,9 @@ doctor12 = Business.create!(
   category: categorie_medecin,
   user: user3,
 )
-#
+
 puts '12 doctors created'
-#
+
 vet1 = Business.create!(
   name: 'Medi-Vet SA',
   address: 'Avenue de Montoie 47, 1007 Lausanne',
@@ -346,7 +345,7 @@ vet1 = Business.create!(
   category: categorie_veterinaire,
   user: user4,
 )
-#
+
 vet2 = Business.create!(
   name: 'Cabinet vétérinaire des Bergières',
   address: 'Avenue Bergières 50, 1004 Lausanne',
@@ -355,7 +354,7 @@ vet2 = Business.create!(
   category: categorie_veterinaire,
   user: user4,
 )
-#
+
 vet3 = Business.create!(
   name: 'Vet 24',
   address: 'Boulevard Carl-Vogt 38, 1205 Genève',
@@ -364,7 +363,7 @@ vet3 = Business.create!(
   category: categorie_veterinaire,
   user: user4,
 )
-#
+
 vet4 = Business.create!(
   name: 'Cabinet Vétérinaire des Sources SA',
   address: 'Rue des Sources 10, 1205 Genève',
@@ -438,9 +437,9 @@ vet12 = Business.create!(
   user: user4,
 )
 puts '12 vets created'
-#
+
 puts 'all schedules destroyed'
-#
+
 Schedule.create!(opens: DateTime.new(2021,4,5,14,0,0), closes: DateTime.new(2021,4,10,7,0,0), business: pharmacie2)
 Schedule.create!(opens: DateTime.new(2021,4,5,14,0,0), closes: DateTime.new(2021,4,10,7,0,0), business: pharmacie1)
 Schedule.create!(opens: DateTime.new(2021,4,5,14,0,0), closes: DateTime.new(2021,4,10,7,0,0), business: pharmacie3)
@@ -453,8 +452,7 @@ Schedule.create!(opens: DateTime.new(2021,4,5,14,0,0), closes: DateTime.new(2021
 Schedule.create!(opens: DateTime.new(2021,4,5,14,0,0), closes: DateTime.new(2021,4,10,7,0,0), business: pharmacie10)
 Schedule.create!(opens: DateTime.new(2021,4,5,14,0,0), closes: DateTime.new(2021,4,10,7,0,0), business: pharmacie11)
 Schedule.create!(opens: DateTime.new(2021,4,5,14,0,0), closes: DateTime.new(2021,4,10,7,0,0), business: pharmacie12)
-#
-#
+
 Schedule.create!(opens: DateTime.new(2021,4,5,14,0,0), closes: DateTime.new(2021,4,10,7,0,0), business: dentiste1)
 Schedule.create!(opens: DateTime.new(2021,4,5,14,0,0), closes: DateTime.new(2021,4,10,7,0,0), business: dentiste2)
 Schedule.create!(opens: DateTime.new(2021,4,5,14,0,0), closes: DateTime.new(2021,4,10,7,0,0), business: dentiste3)
@@ -467,11 +465,7 @@ Schedule.create!(opens: DateTime.new(2021,4,5,14,0,0), closes: DateTime.new(2021
 Schedule.create!(opens: DateTime.new(2021,4,5,14,0,0), closes: DateTime.new(2021,4,10,7,0,0), business: dentiste10)
 Schedule.create!(opens: DateTime.new(2021,4,5,14,0,0), closes: DateTime.new(2021,4,10,7,0,0), business: dentiste11)
 Schedule.create!(opens: DateTime.new(2021,4,5,14,0,0), closes: DateTime.new(2021,4,10,7,0,0), business: dentiste12)
-#
-#
-#
-#
-#
+
 Schedule.create!(opens: DateTime.new(2021,4,5,14,0,0), closes: DateTime.new(2021,4,10,7,0,0), business: doctor1)
 Schedule.create!(opens: DateTime.new(2021,4,5,14,0,0), closes: DateTime.new(2021,4,10,7,0,0), business: doctor2)
 Schedule.create!(opens: DateTime.new(2021,4,5,14,0,0), closes: DateTime.new(2021,4,10,7,0,0), business: doctor3)
@@ -484,9 +478,7 @@ Schedule.create!(opens: DateTime.new(2021,4,5,14,0,0), closes: DateTime.new(2021
 Schedule.create!(opens: DateTime.new(2021,4,5,14,0,0), closes: DateTime.new(2021,4,10,7,0,0), business: doctor10)
 Schedule.create!(opens: DateTime.new(2021,4,5,14,0,0), closes: DateTime.new(2021,4,10,7,0,0), business: doctor11)
 Schedule.create!(opens: DateTime.new(2021,4,5,14,0,0), closes: DateTime.new(2021,4,10,7,0,0), business: doctor12)
-#
-#
-#
+
 Schedule.create!(opens: DateTime.new(2021,4,5,14,0,0), closes: DateTime.new(2021,4,10,7,0,0), business: vet1)
 Schedule.create!(opens: DateTime.new(2021,4,5,14,0,0), closes: DateTime.new(2021,4,10,7,0,0), business: vet2)
 Schedule.create!(opens: DateTime.new(2021,4,5,14,0,0), closes: DateTime.new(2021,4,10,7,0,0), business: vet3)
@@ -499,9 +491,5 @@ Schedule.create!(opens: DateTime.new(2021,4,5,14,0,0), closes: DateTime.new(2021
 Schedule.create!(opens: DateTime.new(2021,4,5,14,0,0), closes: DateTime.new(2021,4,10,7,0,0), business: vet10)
 Schedule.create!(opens: DateTime.new(2021,4,5,14,0,0), closes: DateTime.new(2021,4,10,7,0,0), business: vet11)
 Schedule.create!(opens: DateTime.new(2021,4,5,14,0,0), closes: DateTime.new(2021,4,10,7,0,0), business: vet12)
-#
-#
-#
-#
+
 puts '48 schedules created'
-#

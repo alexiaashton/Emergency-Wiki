@@ -4,6 +4,26 @@
 .mapboxgl-popup-content {
   text-align: center;
   font-family: ‘Open Sans’, sans-serif;
+  border-style: double;
+  border-width: 2px;
+  border-color: $main-green;
+  padding: 0;
+  h2 {
+    font-weight: bold;
+    padding-top: 10px;
+    font-size: 24px;
+  }
+
+  p {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  a {
+    color: $main-green;
+  }
+  a:hover {
+    color: $dark-green;
+  }
 }
 .map {
   width: 100px;
@@ -21,6 +41,13 @@
 a.mapboxgl-ctrl-logo {
   z-index: 2;
 }
+
+.mapboxgl-popup-close-button {
+  font-size: 30px;
+  color: $main-green;
+  margin: 3px;
+}
+
 
 /* @media (min-width: 1200px)
 .map {

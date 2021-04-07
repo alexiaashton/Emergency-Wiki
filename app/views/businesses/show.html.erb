@@ -1,9 +1,21 @@
 <header>
-  <%= link_to 'javascript:history.go(-1);' do %>
-    <i class="fas fa-arrow-alt-circle-left", id="back-arrow"></i>
+  <% if current_user.present? %>
+    <%= link_to my_businesses_path(@business) do %>
+        <i class="fas fa-arrow-alt-circle-left", id="back-arrow"></i>
+    <% end %>
+  <% else %>
+    <%= link_to 'javascript:history.go(-1);' do %>
+      <i class="fas fa-arrow-alt-circle-left", id="back-arrow"></i>
+    <% end %>
   <% end %>
   <h1 id="visitors-title">Emergency Wiki</h1>
-  <%= link_to "Back to Home", root_path, class: "back-to-home-button" %>
+  <% if current_user.present? %>
+  <%= link_to root_path, style: "display: hidden;" %>
+  <% else %>
+    <%= link_to root_path, class: "back-to-home-button" do %>
+      <i class="fas fa-home"></i>
+    <% end %>
+  <% end %>
 </header>
 <div class="show-content-container">
   <div class="show-info">
@@ -13,20 +25,25 @@
         <h3 id="show-address"><%= @business.address.split(', ').first %></h3>
         <h3 id="show-address"><%= @business.address.split(', ').last %></h3>
         <% unless @business.schedules.empty? %>
+        <p>Note: <%=  @business.comment%> </p>
           <p> Open until <%= @business.schedules.first.closes.strftime("%H:%M") %> </p>
         <% end %>
+
         <h3 id="phone-number-show"><%= @business.phone_number %><h3>
       </div>
       <div class="show-info-logo">
         <%= image_tag @business.category.image, class: "show-image" %>
       </div>
     </div>
-    <div id="show-button" class="button-big-red">
-      <%= tel_to "Call Now!", @business.phone_number, style: "font-size: 32px; color: white; font-weight: bold;" %>
-    </div>
+    <% if current_user.present? %>
+      <%= link_to "Edit", edit_business_path(@business), class: "button-big-green", style: "font-size: 32px; color: white; font-weight: bold;" %>
+    <% else %>
+        <%= tel_to "Call Now!", @business.phone_number, class: "button-big-red", style: "font-size: 32px; color: white; font-weight: bold;" %>
+    <% end %>
   </div>
-<div class="show-map" id="delaymap" style="visibility:hidden;">
+  <div class="show-map" id="delaymap" style="visibility:hidden;">
     <%= render 'shared/map' %>
+      <a class="button-small-red" id="gps-button" href="https://www.google.ch/maps/place/<%= @business.address.gsub(/[ ]/, '+') %>">GPS Guidance</a>
   </div>
 </div>
 

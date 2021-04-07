@@ -1,5 +1,6 @@
+<h1>Edit</h1>
 <header>
-  <%= link_to my_businesses_path(@users) do %>
+  <%= link_to business_path(@business) do %>
   <i class="fas fa-arrow-alt-circle-left" , id="back-arrow"></i>
   <% end %>
   <h1 id="visitors-title">Emergency Wiki</h1>
@@ -8,14 +9,7 @@
 
 
 <div class="new-business-container">
-  <h2>Enter your Data</h2>
-
-   <div class="slide-button flexbox">
-    <label class="toggle-control">
-      <input type="checkbox" checked="checked">
-      <span class="control"></span>
-    </label>
-  </div>
+  <h2>Update Your Info</h2>
 
   <div class="add-business-form">
     <%= simple_form_for @business do |f| %>
@@ -30,7 +24,4 @@
     </div>
     <% end %>
   </div>
-
-
 </div>
-
