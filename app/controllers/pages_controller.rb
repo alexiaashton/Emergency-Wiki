@@ -2,11 +2,11 @@ class PagesController < ApplicationController
   skip_before_action :authenticate_user!, only: [:home, :components, :landing]
 
   def home
-    if params[:query].present?
-      @business = Business.where(address: params[:query])
-    else
-      @businesses = Business.all
-    end
+    # if params[:query].present?
+    #   @business = Business.where(address: params[:query])
+    # else
+    #   @businesses = Business.all
+    # end
   end
 
   def landing
