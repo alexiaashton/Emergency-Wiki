@@ -1,9 +1,11 @@
 <%= render 'shared/header' %>
   <div class="home-search-container">
     <%= form_with url: businesses_path, method: :get, class: 'algolia-form' do |form| %>
-      <%= text_field_tag :query, params[:query], placeholder: "Input the Location"%>
-      <%= select_tag :km, options_for_select([5, 10, 20, 30, 50, 100, 500]), class: "form-control", id: "km" %>
-       <div class="category-boxes">
+      <span class="search">
+        <%= text_field_tag :query, params[:query], placeholder: "Input the Location"%>
+        <%= select_tag :km, options_for_select([['5km', 5],['10km', 10], ['20km',20], ['30km',30], ['50km', 50]]), class: "form-control", id: "km" %>
+      </span>
+      <div class="category-boxes">
         <% Category.all.each do |category| %>
           <div class="category-cards">
             <div class="category-cards-info">
