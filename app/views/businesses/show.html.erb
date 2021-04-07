@@ -24,8 +24,11 @@
         <h1 id="show-title"><%= @business.name %></h1>
         <h3 id="show-address"><%= @business.address.split(', ').first %></h3>
         <h3 id="show-address"><%= @business.address.split(', ').last %></h3>
+        <% unless @business.schedules.empty? %>
         <p>Note: <%=  @business.comment%> </p>
-        <p> Open until <%= @business.schedules.first.closes.strftime("%H:%M") %> </p>
+          <p> Open until <%= @business.schedules.first.closes.strftime("%H:%M") %> </p>
+        <% end %>
+
         <h3 id="phone-number-show"><%= @business.phone_number %><h3>
       </div>
       <div class="show-info-logo">
