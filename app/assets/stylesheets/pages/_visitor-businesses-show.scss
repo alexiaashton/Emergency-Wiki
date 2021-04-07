@@ -14,15 +14,16 @@
 .show-info {
   margin: 70px;
 }
+
 .show-info-description {
   text-align: left;
-  width: 50%;
+  width: 70%;
 }
 .show-info-logo {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  width: 50%;
+  width: 30%;
   height: 100%;
   padding-top: 20px;
 }
@@ -35,6 +36,10 @@
   object-fit: cover;
 }
 
+.open-until {
+  text-align: left;
+}
+
 #show-button {
   display:inline-block;
   justify-content: center;
@@ -45,7 +50,8 @@
 }
 
 #phone-number-show {
-  margin-top: 16px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   font-size: 24px;
 }
 
@@ -58,7 +64,7 @@
     animation: pulsing 1300ms infinite;
   }
 
-@media (max-width: 1300px) {
+@media (max-width: 1350px) {
   .show-content-container {
   display: grid;
   grid-template-columns: 1fr;
@@ -105,7 +111,7 @@
   .show-info-logo {
     width: 40px;
     height: 40px;
-    margin: 20px;
+    margin-top: 20px;
   }
   #show-title {
     font-size: 32px;
@@ -120,7 +126,7 @@
   }
 
   .show-info-description {
-    width: 70%
+    width: 85%
   }
 
   #gps-button {
