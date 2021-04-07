@@ -16,8 +16,7 @@
         <p style="font-size: 18px; color: white; text-shadow: none; font-weight: normal;"><%= business.address %></p>
         <p style="font-size: 18px; color: white; text-shadow: none; font-weight: normal;">Open Until:
          <% if !business.schedules.empty? %>
-          <%= business.schedules.first.closes.strftime("%H:%M") %> on
-          <%= business.schedules.first.closes.strftime("%d %B") %></p>
+          <%= business.schedules.first.closes.strftime("%Hh%M") %></p>
         <% end %>
       </div>
       <div class="businesses-cards-km" style="color: black; text-shadow: 3px 3px 3px white">

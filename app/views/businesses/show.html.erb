@@ -24,16 +24,19 @@
         <h1 id="show-title"><%= @business.name %></h1>
         <h3 id="show-address"><%= @business.address.split(', ').first %></h3>
         <h3 id="show-address"><%= @business.address.split(', ').last %></h3>
+        <p style="padding-bottom: 10px; padding-top: 10px;">Note: <%=  @business.comment%> </p>
         <% unless @business.schedules.empty? %>
-        <p>Note: <%=  @business.comment%> </p>
+        <% if current_user.present? %>
         <ul class="list-group">
           <% @business.schedules.each do |schedule| %>
-              <p> Open from <%= schedule.opens.strftime("%H:%M") %> on <%= schedule.opens.strftime(("%d  %A . %B . %Y ")) %></p>
-              <p> Close <%= schedule.closes.strftime("%H:%M") %> ,
-                on <%= schedule.closes.strftime((" %d  %A . %B . %Y  ")) %></p>
+              <p style="font-size: 18px"> - Opens: <%= schedule.opens.strftime("%Hh%M") %>, <%= schedule.opens.strftime(("%d %B %Y")) %></p>
+              <p style="font-size: 18px"> - Closes: <%= schedule.closes.strftime("%Hh%M") %>, <%= schedule.closes.strftime((" %d %B %Y")) %></p>
+                <br>
           <% end %>
         </ul>
-
+        <% else %>
+          <p>Open until: <%= @business.schedules.first.closes.strftime("%Hh%M") %></p>
+        <% end %>
         <% end %>
 
         <h3 id="phone-number-show"><%= @business.phone_number %><h3>
@@ -43,8 +46,8 @@
       </div>
     </div>
     <% if current_user.present? %>
-      <%= link_to "Edit", edit_business_path(@business), class: "button-big-green", style: "font-size: 32px; color: white; font-weight: bold; margin: 20px;" %> 
-      <%= link_to "Add schedule", new_business_schedule_path(@business), class: "button-big-green", style: "font-size: 32px; color: white; font-weight: bold;" %>
+      <%= link_to "Edit", edit_business_path(@business), class: "button-big-green", style: "font-size: 24px; color: white; font-weight: bold; margin: 20px;" %>
+      <%= link_to "Add schedule", new_business_schedule_path(@business), class: "button-big-green", style: "font-size: 24px; color: white; font-weight: bold;" %>
     <% else %>
         <%= tel_to "Call Now!", @business.phone_number, class: "button-big-red", id: "blinking-show" %>
     <% end %>
