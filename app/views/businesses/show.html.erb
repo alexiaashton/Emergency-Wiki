@@ -23,13 +23,9 @@
       </div>
     </div>
     <% if current_user.present? %>
-      <div class="button-big-green">
-          <%= link_to "Edit", edit_business_path(@business), style: "font-size: 32px; color: white; font-weight: bold;" %>
-      </div>
+      <%= link_to "Edit", edit_business_path(@business), class: "button-big-green", style: "font-size: 32px; color: white; font-weight: bold;" %>
     <% else %>
-       <div id="show-button" class="button-big-red">
-        <%= tel_to "Call Now!", @business.phone_number, style: "font-size: 32px; color: white; font-weight: bold;" %>
-      </div>
+        <%= tel_to "Call Now!", @business.phone_number, class: "button-big-red", style: "font-size: 32px; color: white; font-weight: bold;" %>
     <% end %>
   </div>
   <div class="show-map" id="delaymap" style="visibility:hidden;">
