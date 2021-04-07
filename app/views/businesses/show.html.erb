@@ -24,7 +24,7 @@
     </div>
     <% if current_user.present? %>
       <div class="button-big-green">
-          <%= link_to "Edit", edit_business_path(@business) %>
+          <%= link_to "Edit", edit_business_path(@business), style: "font-size: 32px; color: white; font-weight: bold;" %>
       </div>
     <% else %>
        <div id="show-button" class="button-big-red">
