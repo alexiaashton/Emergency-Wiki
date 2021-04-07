@@ -1,10 +1,20 @@
 <header>
-  <%= link_to 'javascript:history.go(-1);' do %>
-    <i class="fas fa-arrow-alt-circle-left", id="back-arrow"></i>
+  <% if current_user.present? %>
+    <%= link_to my_businesses_path(@business) do %>
+        <i class="fas fa-arrow-alt-circle-left", id="back-arrow"></i>
+    <% end %>
+  <% else %>
+    <%= link_to 'javascript:history.go(-1);' do %>
+      <i class="fas fa-arrow-alt-circle-left", id="back-arrow"></i>
+    <% end %>
   <% end %>
   <h1 id="visitors-title">Emergency Wiki</h1>
-  <%= link_to root_path, class: "back-to-home-button" do %>
-  <i class="fas fa-home"></i>
+  <% if current_user.present? %>
+  <%= link_to root_path, style: "display: hidden;" %>
+  <% else %>
+    <%= link_to root_path, class: "back-to-home-button" do %>
+      <i class="fas fa-home"></i>
+    <% end %>
   <% end %>
 </header>
 <div class="show-content-container">
