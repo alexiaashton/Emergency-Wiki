@@ -11,6 +11,18 @@
   font-size: 20px;
 }
 
+.add-schedule-form {
+  font-size: 20px;
+  .form-control {
+    display: block;
+    width: 100%;
+    height: calc(1.5em + 0.75rem + 2px);
+    border: 1px solid #ced4da;
+    border-radius: 2px;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+}
+
 .update-business-container,
 .new-business-container {
   margin: 20px;
