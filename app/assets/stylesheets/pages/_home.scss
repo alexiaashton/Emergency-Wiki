@@ -1,7 +1,12 @@
 // put your style for the home page here
 .algolia-places {
-  max-width: 100;
+  max-width: 80%;
   display: inline !important;
+}
+
+.search{
+  display: flex;
+  justify-content: center;
 }
 
 #km {
@@ -15,14 +20,8 @@
   margin-left: 10px;
 }
 
-.flex-search{
-   display: inline-flex;
-   width: 80%;
-   justify-content: center;
- }
-
 .algolia-form{
-  max-width: 100%;
+  max-width: 80%;
 }
 
 #query {
@@ -43,7 +42,7 @@
   height: 40px !important;
   fill: $dark-green;
   padding-bottom: -40px;
-  top: 120%;
+  top: 40%;
 
 }
 
