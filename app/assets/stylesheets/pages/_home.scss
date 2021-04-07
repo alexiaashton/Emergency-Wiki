@@ -2,7 +2,6 @@
 .algolia-places {
   max-width: 80%;
   display: inline !important;
-  justify-content: center;
 }
 
 .search{
@@ -49,7 +48,8 @@
   height: 40px !important;
   fill: $dark-green;
   padding-bottom: -40px;
-  top: 40%;
+  top: 50%;
+
 }
 
 .ap-input:hover ~ .ap-input-icon svg, .ap-input:focus ~ .ap-input-icon svg, .ap-input-icon:hover svg {
