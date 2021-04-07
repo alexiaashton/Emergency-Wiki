@@ -1,9 +1,17 @@
 <%= render 'shared/header' %>
   <div class="home-search-container">
-    <%= form_with url: businesses_path, method: :get, class: 'algolia-form' do |form| %>
-    <%= text_field_tag :query, params[:query], placeholder: "Input the Location"%>
-    <%= select_tag :km, options_for_select([5, 10, 20, 30, 50, 100, 500]), class: "form-control", id: "km" %>
-    <div class="category-boxes">
+    <div class="flex-search">
+      <div class="search-bar">
+        <%= form_with url: businesses_path, method: :get, class: 'algolia-form' do |form| %>
+        <%= text_field_tag :query,
+        params[:query], placeholder: "Input the Location"%>
+      </div>
+      <div>
+        <%= select_tag :km, options_for_select([5, 10, 20, 30, 50, 100, 500]), class: "form-control", id: "km" %>
+      </div>
+    </div>
+  </div>
+  <div class="category-boxes">
       <% Category.all.each do |category| %>
       <div class="category-cards">
         <div class="category-cards-info">
@@ -11,7 +19,7 @@
             <input  class="category-cards-radio" type="radio" name="category" value="<%= category.id %>">
             <%= category.name %>
           </label>
-     </div>
+      </div>
         <div class="category-cards-logo">
           <%= image_tag category.image , class: "category-image" %>
         </div>
@@ -23,6 +31,7 @@
     </div>
     <% end %>
   </div>
+
 
 
 
