@@ -61,7 +61,7 @@
     bottom: 50px;
     z-index: 10;
     font-size: 20px;
-    animation: pulsing 1300ms infinite;
+    animation: pulsing 2s infinite;
   }
 
 @media (max-width: 1350px) {
@@ -97,7 +97,7 @@
     bottom: 70px;
     z-index: 10;
     font-size: 14px;
-    animation: pulsing 1300ms infinite;
+    animation: pulsing 2s infinite;
   }
 }
 
@@ -135,7 +135,7 @@
   bottom: 70px;
   z-index: 10;
   font-size: 14px;
-  animation: pulsing 1300ms infinite;
+  animation: pulsing 2s infinite;
   }
 }
 
@@ -144,7 +144,7 @@
   color: white;
   font-weight: bold;
   margin: 20px;
-  animation: pulsing 1300ms infinite;
+  animation: pulsing 2s infinite;
 }
 
 @keyframes glowing {
@@ -153,12 +153,12 @@
     box-shadow: 0 0 5px $alert-red;
   }
   50% {
-    background-color: red;
-    box-shadow: 0 0 20px red;
+    background-color: $alert-red;
+    box-shadow: 0 0 10px $alert-red;
   }
   100% {
-    background-color:  #f80303;
-    box-shadow: 0 0 5px #f80303;
+    background-color:  $alert-red;
+    box-shadow: 0 0 5px $alert-red;
   }
 }
 
@@ -169,7 +169,7 @@
   }
   50% {
     background-color: $alert-red;
-    box-shadow: 0 0 20px $alert-red;
+    box-shadow: 0 0 15px $alert-red;
   }
   100% {
     background-color:  $alert-red;
