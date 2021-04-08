@@ -57,6 +57,7 @@
 
       <%= link_to "Edit", edit_business_path(@business), class: "button-big-green", style: "font-size: 24px; color: white; font-weight: bold; margin-top: 20px;" %>
       <%= link_to "Add schedule", new_business_schedule_path(@business), class: "button-big-green", style: "font-size: 24px; color: white; font-weight: bold; margin-top: 10px;" %>
+      <%= link_to "Delete Business", business_path(@business), class: "button-big-red", method: :delete, data: { confirm: "Are you sure?" }, style: "font-size: 24px; color: white; font-weight: bold; margin-top: 10px;" %>
     <% else %>
         <%= tel_to "Call Now!", @business.phone_number, class: "button-big-red", id: "blinking-show" %>
     <% end %>
