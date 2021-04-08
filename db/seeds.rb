@@ -13,8 +13,8 @@ user1 = User.create!(username:"Pharmacie-Sun-Store-SA", password:"123456", email
 user2 = User.create!(username:"Dentiste-24-SA", password:"123456", email:"info@dentiste-24.ch")
 user3 = User.create!(username:"Permanence-de-Gare-SA", password:"123456", email:"info@permanence-de-gare.ch")
 user4 = User.create!(username:"Veterinaires-sans-limites-SA", password:"123456", email:"info@veterinaires-sans-limites.ch")
-
-puts '4 users created'
+user5 = User.create!(username:"Medecin-de-Garde", password:"123456", email:"info@medecin-de-garde.ch")
+puts '5 users created'
 
 puts "creating categories..."
 
@@ -34,7 +34,6 @@ pharmacie1 = Business.create!(
   category: categorie_pharmacie,
   user: user1,
 )
-
 pharmacie2 = Business.create!(
   name: 'Sun Store',
   address: 'Place de la Gare, 1003 Lausanne',
@@ -43,7 +42,6 @@ pharmacie2 = Business.create!(
   category: categorie_pharmacie,
   user: user1,
 )
-
 pharmacie3 = Business.create!(
   name: 'Pharma 24',
   address: 'Boulevard de la Cluse 38, 1205 Genève',
@@ -52,7 +50,6 @@ pharmacie3 = Business.create!(
   category: categorie_pharmacie,
   user: user1,
 )
-
 pharmacie4 = Business.create!(
   name: 'Pharmacie des Banques',
   address: 'Rue du Stand 62, 1204 Genève',
@@ -61,7 +58,6 @@ pharmacie4 = Business.create!(
   category: categorie_pharmacie,
   user: user1,
 )
-
 pharmacie5 = Business.create!(
   name: 'Neustadt Apotheke',
   address: 'Moosstrasse 26, 6003 Luzern',
@@ -70,7 +66,6 @@ pharmacie5 = Business.create!(
   category: categorie_pharmacie,
   user: user1,
 )
-
 pharmacie6 = Business.create!(
   name: 'Medicus Apotheke AG',
   address: 'Luzernerstrasse 30, 6010 Kriens',
@@ -79,7 +74,6 @@ pharmacie6 = Business.create!(
   category: categorie_pharmacie,
   user: user1,
 )
-
 pharmacie7 = Business.create!(
   name: 'Medbase Apotheke Bahnhof',
   address: 'Bahnhofplatz 10, 2502 Biel',
@@ -88,7 +82,6 @@ pharmacie7 = Business.create!(
   category: categorie_pharmacie,
   user: user1,
 )
-
 pharmacie8 = Business.create!(
   name: 'Coop Vitality AG',
   address: 'Salzhausstrasse 31, 2503 Biel',
@@ -129,8 +122,239 @@ pharmacie12 = Business.create!(
   category: categorie_pharmacie,
   user: user1,
 )
-
-puts '12 pharmacies created'
+pharmacie13 = Business.create!(
+  name: 'Pharmacie Principale Chavannes',
+  address: 'Chemin Industriel 1, 1279 Chavannes-de-Bogis',
+  phone_number: '079 473 33 50',
+  comment: 'Please call before passing!',
+  category: categorie_pharmacie,
+  user: user1,
+)
+pharmacie14 = Business.create!(
+  name: "Pharmacie Vidy-Pharm",
+  address: 'Route de Chavannes 9, 1007 Lausanne',
+  phone_number: '079 473 33 50',
+  comment: 'Please call before passing!',
+  category: categorie_pharmacie,
+  user: user1,
+)
+pharmacie15 = Business.create!(
+  name: "Pharmacie Populaire d'Echallens",
+  address: "Avenue d'Echallens 61, 1004 Lausanne",
+  phone_number: '079 473 33 50',
+  comment: 'Please call before passing!',
+  category: categorie_pharmacie,
+  user: user1,
+)
+pharmacie16 = Business.create!(
+  name: 'Pharmacie de Chavannes',
+  address: 'Rue de la Blancherie 14, 1022 Chavannes-près-Renens',
+  phone_number: '079 473 33 50',
+  comment: 'Please call before passing!',
+  category: categorie_pharmacie,
+  user: user1,
+)
+pharmacie17 = Business.create!(
+  name: 'Pharmacie Vallombreuse',
+  address: 'Avenue de Mont-Goulin 21, 1008 Prilly',
+  phone_number: '079 473 33 50',
+  comment: 'Please call before passing!',
+  category: categorie_pharmacie,
+  user: user1,
+)
+pharmacie18 = Business.create!(
+  name: 'Amavita Les Arcades',
+  address: 'Rue du Midi 10, 1020 Renens',
+  phone_number: '079 473 33 50',
+  comment: 'Please call before passing!',
+  category: categorie_pharmacie,
+  user: user1,
+)
+pharmacie19 = Business.create!(
+  name: 'Pharmacie de Sauvabelin Sàrl',
+  address: 'Route Aloys-Fauquez 87, 1018 Lausanne',
+  phone_number: '079 473 33 50',
+  comment: 'Please call before passing!',
+  category: categorie_pharmacie,
+  user: user1,
+)
+pharmacie20 = Business.create!(
+  name: 'Pharmacie Metro Flon',
+  address: "Place de l'Europe 5, 1003 Lausanne",
+  phone_number: '079 473 33 50',
+  comment: 'Please call before passing!',
+  category: categorie_pharmacie,
+  user: user1,
+)
+pharmacie21 = Business.create!(
+  name: 'Pharmacie Principale Chavannes',
+  address: 'Chemin Industriel 1, 1279 Chavannes-de-Bogis',
+  phone_number: '079 473 33 50',
+  comment: 'Please call before passing!',
+  category: categorie_pharmacie,
+  user: user1,
+)
+pharmacie22 = Business.create!(
+  name: 'SUN STORE Carouge Praille',
+  address: 'Avenue Vibert 32, 1227 Carouge',
+  phone_number: '079 473 33 50',
+  comment: 'Please call before passing!',
+  category: categorie_pharmacie,
+  user: user1,
+)
+pharmacie23 = Business.create!(
+  name: 'Service du pharmacien cantonal',
+  address: 'Rue Adrien-Lachenal 8, 1207 Genève',
+  phone_number: '079 473 33 50',
+  comment: 'Please call before passing!',
+  category: categorie_pharmacie,
+  user: user1,
+)
+pharmacie24 = Business.create!(
+  name: 'Pharmacie des Alpes Genève',
+  address: 'Rue des Alpes 17, 1201 Genève',
+  phone_number: '079 473 33 50',
+  comment: 'Please call before passing!',
+  category: categorie_pharmacie,
+  user: user1,
+)
+pharmacie25 = Business.create!(
+  name: 'Amavita Tramelan',
+  address: 'Grand-Rue 153, 2720 Tramelan',
+  phone_number: '079 473 33 50',
+  comment: 'Please call before passing!',
+  category: categorie_pharmacie,
+  user: user1,
+)
+pharmacie26 = Business.create!(
+  name: 'Grande Pharmacie de Genève',
+  address: '1 Rue de Genève, 74100 Ambilly, France',
+  phone_number: '079 473 33 50',
+  comment: 'Please call before passing!',
+  category: categorie_pharmacie,
+  user: user1,
+)
+pharmacie27 = Business.create!(
+  name: 'Pharmacie du Quai du Mont-Blanc Genève',
+  address: 'Quai du Mont-Blanc 19, 1201 Genève',
+  phone_number: '079 473 33 50',
+  comment: 'Please call before passing!',
+  category: categorie_pharmacie,
+  user: user1,
+)
+pharmacie28 = Business.create!(
+  name: 'SUN STORE Villars-sur-Glâne',
+  address: 'Route de Moncor 1, 1752 Villars-sur-Glâne',
+  phone_number: '079 473 33 50',
+  comment: 'Please call before passing!',
+  category: categorie_pharmacie,
+  user: user1,
+)
+pharmacie29 = Business.create!(
+  name: 'Pharmacie Dr a Marca',
+  address: 'Avenue de la Gare 4, 1701 Fribourg',
+  phone_number: '079 473 33 50',
+  comment: 'Please call before passing!',
+  category: categorie_pharmacie,
+  user: user1,
+)
+pharmacie30 = Business.create!(
+  name: 'Pharmacien cantonal',
+  address: 'Route des Cliniques 17, 1700 Fribourg',
+  phone_number: '079 473 33 50',
+  comment: 'Please call before passing!',
+  category: categorie_pharmacie,
+  user: user1,
+)
+pharmacie31 = Business.create!(
+  name: 'Pharmacie Perolles Thiémard',
+  address: 'Boulevard de Pérolles 6, 1700 Fribourg',
+  phone_number: '079 473 33 50',
+  comment: 'Please call before passing!',
+  category: categorie_pharmacie,
+  user: user1,
+)
+pharmacie32 = Business.create!(
+  name: 'BENU Pharmacie La Galerie',
+  address: 'Avenue de la Gare 22, 1700 Fribourg',
+  phone_number: '079 473 33 50',
+  comment: 'Please call before passing!',
+  category: categorie_pharmacie,
+  user: user1,
+)
+pharmacie33 = Business.create!(
+  name: 'Pharmacie D. Machoud',
+  address: 'Rue du Scex 2, 1950 Sion',
+  phone_number: '079 473 33 50',
+  comment: 'Please call before passing!',
+  category: categorie_pharmacie,
+  user: user1,
+)
+pharmacie34 = Business.create!(
+  name: 'SUN STORE Villeneuve',
+  address: 'Centre Commercial Riviera, Pré-de-la-Croix 18, 1847 Rennaz',
+  phone_number: '079 473 33 50',
+  comment: 'Please call before passing!',
+  category: categorie_pharmacie,
+  user: user1,
+)
+pharmacie35 = Business.create!(
+  name: 'Valaisanne de Pharmacie',
+  address: 'Route de Robinson 43, 3977 Granges',
+  phone_number: '079 473 33 50',
+  comment: 'Please call before passing!',
+  category: categorie_pharmacie,
+  user: user1,
+)
+pharmacie36 = Business.create!(
+  name: 'Pharmacie des Puits',
+  address: 'Chemin du Verger 3, 1868 Collombey-Muraz',
+  phone_number: '079 473 33 50',
+  comment: 'Please call before passing!',
+  category: categorie_pharmacie,
+  user: user1,
+)
+pharmacie37 = Business.create!(
+  name: 'Pharmacie Lauber',
+  address: ' Avenue de Fully 63, 1920 Martigny',
+  phone_number: '079 473 33 50',
+  comment: 'Please call before passing!',
+  category: categorie_pharmacie,
+  user: user1,
+)
+pharmacie38 = Business.create!(
+  name: 'SUN STORE Collombey',
+  address: 'Centre commercial Parc du Rhône, Z.A. Pré Jacquet 1, 1868 Collombey-Muraz',
+  phone_number: '079 473 33 50',
+  comment: 'Please call before passing!',
+  category: categorie_pharmacie,
+  user: user1,
+)
+pharmacie39 = Business.create!(
+  name: 'Pharmacie Werlen',
+  address: 'Avenue de la Gare 22, 1920 Martigny',
+  phone_number: '079 473 33 50',
+  comment: 'Please call before passing!',
+  category: categorie_pharmacie,
+  user: user1,
+)
+pharmacie40 = Business.create!(
+  name: 'Pharmacie de Saillon',
+  address: 'Route de Fully 11, 1913 Saill',
+  phone_number: '079 473 33 50',
+  comment: 'Please call before passing!',
+  category: categorie_pharmacie,
+  user: user1,
+)
+pharmacie41 = Business.create!(
+  name: 'Pharmacie de Riddes',
+  address: 'Rue du Faubourg 11, 1908 Riddes',
+  phone_number: '079 473 33 50',
+  comment: 'Please call before passing!',
+  category: categorie_pharmacie,
+  user: user1,
+)
+puts '41 pharmacies created'
 
 dentiste1 = Business.create!(
   name: 'Label-dent',
@@ -676,9 +900,39 @@ Schedule.create!(opens: DateTime.new(2021,4,5,14,0,0), closes: DateTime.new(2021
 Schedule.create!(opens: DateTime.new(2021,4,5,14,0,0), closes: DateTime.new(2021,4,10,7,0,0), business: pharmacie7)
 Schedule.create!(opens: DateTime.new(2021,4,5,14,0,0), closes: DateTime.new(2021,4,10,7,0,0), business: pharmacie8)
 Schedule.create!(opens: DateTime.new(2021,4,5,14,0,0), closes: DateTime.new(2021,4,10,7,0,0), business: pharmacie9)
+
 Schedule.create!(opens: DateTime.new(2021,4,5,14,0,0), closes: DateTime.new(2021,4,10,7,0,0), business: pharmacie10)
 Schedule.create!(opens: DateTime.new(2021,4,5,14,0,0), closes: DateTime.new(2021,4,10,7,0,0), business: pharmacie11)
 Schedule.create!(opens: DateTime.new(2021,4,5,14,0,0), closes: DateTime.new(2021,4,10,7,0,0), business: pharmacie12)
+Schedule.create!(opens: DateTime.new(2021,4,5,14,0,0), closes: DateTime.new(2021,4,10,7,0,0), business: pharmacie13)
+Schedule.create!(opens: DateTime.new(2021,4,5,14,0,0), closes: DateTime.new(2021,4,10,7,0,0), business: pharmacie14)
+Schedule.create!(opens: DateTime.new(2021,4,5,14,0,0), closes: DateTime.new(2021,4,10,7,0,0), business: pharmacie15)
+Schedule.create!(opens: DateTime.new(2021,4,5,14,0,0), closes: DateTime.new(2021,4,10,7,0,0), business: pharmacie16)
+Schedule.create!(opens: DateTime.new(2021,4,5,14,0,0), closes: DateTime.new(2021,4,10,7,0,0), business: pharmacie17)
+Schedule.create!(opens: DateTime.new(2021,4,5,14,0,0), closes: DateTime.new(2021,4,10,7,0,0), business: pharmacie18)
+Schedule.create!(opens: DateTime.new(2021,4,5,14,0,0), closes: DateTime.new(2021,4,10,7,0,0), business: pharmacie19)
+Schedule.create!(opens: DateTime.new(2021,4,5,14,0,0), closes: DateTime.new(2021,4,10,7,0,0), business: pharmacie20)
+Schedule.create!(opens: DateTime.new(2021,4,5,14,0,0), closes: DateTime.new(2021,4,10,7,0,0), business: pharmacie21)
+Schedule.create!(opens: DateTime.new(2021,4,5,14,0,0), closes: DateTime.new(2021,4,10,7,0,0), business: pharmacie22)
+Schedule.create!(opens: DateTime.new(2021,4,5,14,0,0), closes: DateTime.new(2021,4,10,7,0,0), business: pharmacie23)
+Schedule.create!(opens: DateTime.new(2021,4,5,14,0,0), closes: DateTime.new(2021,4,10,7,0,0), business: pharmacie24)
+Schedule.create!(opens: DateTime.new(2021,4,5,14,0,0), closes: DateTime.new(2021,4,10,7,0,0), business: pharmacie25)
+Schedule.create!(opens: DateTime.new(2021,4,5,14,0,0), closes: DateTime.new(2021,4,10,7,0,0), business: pharmacie26)
+Schedule.create!(opens: DateTime.new(2021,4,5,14,0,0), closes: DateTime.new(2021,4,10,7,0,0), business: pharmacie27)
+Schedule.create!(opens: DateTime.new(2021,4,5,14,0,0), closes: DateTime.new(2021,4,10,7,0,0), business: pharmacie28)
+Schedule.create!(opens: DateTime.new(2021,4,5,14,0,0), closes: DateTime.new(2021,4,10,7,0,0), business: pharmacie29)
+Schedule.create!(opens: DateTime.new(2021,4,5,14,0,0), closes: DateTime.new(2021,4,10,7,0,0), business: pharmacie30)
+Schedule.create!(opens: DateTime.new(2021,4,5,14,0,0), closes: DateTime.new(2021,4,10,7,0,0), business: pharmacie31)
+Schedule.create!(opens: DateTime.new(2021,4,5,14,0,0), closes: DateTime.new(2021,4,10,7,0,0), business: pharmacie32)
+Schedule.create!(opens: DateTime.new(2021,4,5,14,0,0), closes: DateTime.new(2021,4,10,7,0,0), business: pharmacie33)
+Schedule.create!(opens: DateTime.new(2021,4,5,14,0,0), closes: DateTime.new(2021,4,10,7,0,0), business: pharmacie34)
+Schedule.create!(opens: DateTime.new(2021,4,5,14,0,0), closes: DateTime.new(2021,4,10,7,0,0), business: pharmacie35)
+Schedule.create!(opens: DateTime.new(2021,4,5,14,0,0), closes: DateTime.new(2021,4,10,7,0,0), business: pharmacie36)
+Schedule.create!(opens: DateTime.new(2021,4,5,14,0,0), closes: DateTime.new(2021,4,10,7,0,0), business: pharmacie37)
+Schedule.create!(opens: DateTime.new(2021,4,5,14,0,0), closes: DateTime.new(2021,4,10,7,0,0), business: pharmacie38)
+Schedule.create!(opens: DateTime.new(2021,4,5,14,0,0), closes: DateTime.new(2021,4,10,7,0,0), business: pharmacie39)
+Schedule.create!(opens: DateTime.new(2021,4,5,14,0,0), closes: DateTime.new(2021,4,10,7,0,0), business: pharmacie40)
+Schedule.create!(opens: DateTime.new(2021,4,5,14,0,0), closes: DateTime.new(2021,4,10,7,0,0), business: pharmacie41)
 
 Schedule.create!(opens: DateTime.new(2021,4,5,14,0,0), closes: DateTime.new(2021,4,10,7,0,0), business: dentiste1)
 Schedule.create!(opens: DateTime.new(2021,4,5,14,0,0), closes: DateTime.new(2021,4,10,7,0,0), business: dentiste2)
@@ -749,4 +1003,4 @@ Schedule.create!(opens: DateTime.new(2021,4,5,14,0,0), closes: DateTime.new(2021
 Schedule.create!(opens: DateTime.new(2021,4,5,14,0,0), closes: DateTime.new(2021,4,10,7,0,0), business: vet11)
 Schedule.create!(opens: DateTime.new(2021,4,5,14,0,0), closes: DateTime.new(2021,4,10,7,0,0), business: vet12)
 
-puts '48 schedules created'
+puts '105 schedules created'
