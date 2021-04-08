@@ -40,9 +40,10 @@
     margin-top: 80px;
   }
   .map-container-index {
-    position: relative;
+    position: fixed;
+    bottom: 0;
     width: 100vw;
-    height: 60vh !important;
+    height: 40vh !important;
   }
 
   .business-cards-container {
