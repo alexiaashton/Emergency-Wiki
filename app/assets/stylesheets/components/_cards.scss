@@ -97,7 +97,39 @@
   font-size: 32px;
 }
 
-// this is the css for the user business cards
-.user-cards {
+// this is the css for the opening hours cards
+.opening-hours-cards {
+  background-color: grey;
+  width: 320px;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  background-color: rgba(77, 172, 146, 0.8);
+  padding-left: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
 
+}
+
+.opening-hours-info {
+  color: white;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5)
+}
+
+.opening-hours-trash {
+  background-color: $light-green;
+  height: 60px;
+  width: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#trash-icon {
+  color: $alert-red;
+  &:hover {
+    color: $dark-red;
+  }
 }
