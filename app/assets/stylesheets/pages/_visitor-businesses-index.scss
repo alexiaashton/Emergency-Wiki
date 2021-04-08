@@ -23,7 +23,6 @@
   object-fit: cover;
 }
 
-
 /*Media Queries*/
 
 @media (max-width: 1500px) {
@@ -37,12 +36,13 @@
   .business-index-container {
     flex-direction: column;
     align-items: center;
-    margin-top: 100px;
+    margin-top: 80px;
   }
   .map-container-index {
-    position: relative;
+    position: fixed;
+    bottom: 0;
     width: 100vw;
-    height: 60vh !important;
+    height: 40vh !important;
   }
 
   .business-cards-container {
@@ -62,9 +62,10 @@
   }
 
     .map-container-index {
-    position: relative;
+    position: fixed;
+    bottom: 0;
     width: 100vw;
-    height: 60vh !important;
+    height: 40vh !important;
   }
 }
 
