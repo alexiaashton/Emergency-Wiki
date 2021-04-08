@@ -31,13 +31,6 @@
      grid-template-columns: 1fr;
      justify-items: center;
   }
-
-  .map-container-index {
-    position: sticky;
-    height: calc(100vh - 140px - 48px);
-    width: 100%;
-    bottom: 0;
-  }
 }
 
 @media (max-width: 992px) {
