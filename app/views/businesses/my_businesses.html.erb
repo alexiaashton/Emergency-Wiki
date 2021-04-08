@@ -9,9 +9,9 @@
   <% @business.each do |business| %>
     <div class="user-businesses-cards">
       <div class="user-business-cards-info">
-        <h5><%= business.name %></h5>
-        <p><%= business.address.split(', ').first %> </p>
-        <p><%= business.address.split(', ').last %></p>
+        <h5 style="font-size: 20px;"><%= business.name %></h5>
+        <p style="font-size: 16px"><%= business.address.split(', ').first %> </p>
+        <p style="font-size: 16px"><%= business.address.split(', ').last %></p>
       </div>
       <div class="user-businesses-cards-logo">
         <%= image_tag business.category.image, class: "users-business-image" %>
