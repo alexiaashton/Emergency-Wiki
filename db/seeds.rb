@@ -234,14 +234,7 @@ pharmacie26 = Business.create!(
   category: categorie_pharmacie,
   user: user1,
 )
-pharmacie27 = Business.create!(
-  name: 'Pharmacie du Quai du Mont-Blanc Genève',
-  address: 'Quai du Mont-Blanc 19, 1201 Genève',
-  phone_number: '079 473 33 50',
-  comment: 'Please call before passing!',
-  category: categorie_pharmacie,
-  user: user1,
-)
+
 pharmacie28 = Business.create!(
   name: 'SUN STORE Villars-sur-Glâne',
   address: 'Route de Moncor 1, 1752 Villars-sur-Glâne',
@@ -459,7 +452,7 @@ dentiste12 = Business.create!(
 puts '12 dentists created'
 
 doctor1 = Business.create!(
-  name: 'Cabinet Médical Brenn Steve',
+  name: 'Cabinet Steve',
   address: 'Avenue Antoine-Michel-Servan 10, 1006 Lausanne',
   phone_number: '079 473 33 50',
   comment: 'Please call before passing!',
@@ -918,7 +911,6 @@ Schedule.create!(opens: DateTime.new(2021,4,5,14,0,0), closes: DateTime.new(2021
 Schedule.create!(opens: DateTime.new(2021,4,5,14,0,0), closes: DateTime.new(2021,4,10,7,0,0), business: pharmacie24)
 Schedule.create!(opens: DateTime.new(2021,4,5,14,0,0), closes: DateTime.new(2021,4,10,7,0,0), business: pharmacie25)
 Schedule.create!(opens: DateTime.new(2021,4,5,14,0,0), closes: DateTime.new(2021,4,10,7,0,0), business: pharmacie26)
-Schedule.create!(opens: DateTime.new(2021,4,5,14,0,0), closes: DateTime.new(2021,4,10,7,0,0), business: pharmacie27)
 Schedule.create!(opens: DateTime.new(2021,4,5,14,0,0), closes: DateTime.new(2021,4,10,7,0,0), business: pharmacie28)
 Schedule.create!(opens: DateTime.new(2021,4,5,14,0,0), closes: DateTime.new(2021,4,10,7,0,0), business: pharmacie29)
 Schedule.create!(opens: DateTime.new(2021,4,5,14,0,0), closes: DateTime.new(2021,4,10,7,0,0), business: pharmacie30)
