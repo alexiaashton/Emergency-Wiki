@@ -57,7 +57,9 @@ class BusinessesController < ApplicationController
   end
 
   def destroy
+    @business = Business.find(params[:id])
     @business.destroy
+    redirect_to my_businesses_path(@user)
   end
 
   def my_businesses
