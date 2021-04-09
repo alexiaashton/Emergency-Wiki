@@ -579,14 +579,6 @@ doctor16 = Business.create!(
   category: categorie_medecin,
   user: user3,
 )
-doctor17 = Business.create!(
-  name: 'Dr Michel Eddé',
-  address: 'Route de Chavannes 11, 1007 Lausanne',
-  phone_number: '079 473 33 50',
-  comment: 'Please call before passing!',
-  category: categorie_medecin,
-  user: user3,
-)
 doctor18 = Business.create!(
   name: 'Daniel Bally',
   address: 'Avenue Victor-Ruffy 6, 1012 Lausanne',
@@ -595,22 +587,7 @@ doctor18 = Business.create!(
   category: categorie_medecin,
   user: user3,
 )
-doctor19 = Business.create!(
-  name: 'Mrs. Ariane Mercier',
-  address: 'Route de Chavannes 11, 1007 Lausanne',
-  phone_number: '079 473 33 50',
-  comment: 'Please call before passing!',
-  category: categorie_medecin,
-  user: user3,
-)
-doctor20 = Business.create!(
-  name: 'Mr. Dr.med. Thomas Aeschbach',
-  address: 'Avenue du Servan 2, 1006 Lausanne',
-  phone_number: '079 473 33 50',
-  comment: 'Please call before passing!',
-  category: categorie_medecin,
-  user: user3,
-)
+
 doctor21 = Business.create!(
   name: 'Dr Imran Khodabux',
   address: 'Chemin Malombré 5, 1206 Genève',
@@ -646,134 +623,6 @@ doctor24 = Business.create!(
 doctor25 = Business.create!(
   name: 'Dr Samir Bellara',
   address: 'Rue Firmin-Massot 2, 1206 Genève',
-  phone_number: '079 473 33 50',
-  comment: 'Please call before passing!',
-  category: categorie_medecin,
-  user: user3,
-)
-doctor26 = Business.create!(
-  name: 'Dr NAESEH Wael',
-  address: 'Avenue de Champel 81, 1206 Genève',
-  phone_number: '079 473 33 50',
-  comment: 'Please call before passing!',
-  category: categorie_medecin,
-  user: user3,
-)
-doctor27 = Business.create!(
-  name: 'Dr Fatiha ABED',
-  address: 'Rue de Lyon 87-91, 1203 Genève',
-  phone_number: '079 473 33 50',
-  comment: 'Please call before passing!',
-  category: categorie_medecin,
-  user: user3,
-)
-doctor28 = Business.create!(
-  name: 'Dr Deguines Yann',
-  address: 'Avenue Louis-Casaï 27, 1209 Genève',
-  phone_number: '079 473 33 50',
-  comment: 'Please call before passing!',
-  category: categorie_medecin,
-  user: user3,
-)
-doctor29 = Business.create!(
-  name: 'Dr Richard Schrai',
-  address: 'Place des Charmilles 3, 1203 Genève',
-  phone_number: '079 473 33 50',
-  comment: 'Please call before passing!',
-  category: categorie_medecin,
-  user: user3,
-)
-doctor30 = Business.create!(
-  name: 'Dr Phi Huynh Do',
-  address: 'Place des Charmilles 3, 1203 Genève',
-  phone_number: '079 473 33 50',
-  comment: 'Please call before passing!',
-  category: categorie_medecin,
-  user: user3,
-)
-doctor31 = Business.create!(
-  name: 'Dr Colas',
-  address: 'Avenue de la Gare 4, 1700 Fribourg',
-  phone_number: '079 473 33 50',
-  comment: 'Please call before passing!',
-  category: categorie_medecin,
-  user: user3,
-)
-doctor32 = Business.create!(
-  name: 'Dr méd. Jean-Bernard Guilhem',
-  address: 'Boulevard de Pérolles 18, 1700 Fribourg',
-  phone_number: '079 473 33 50',
-  comment: 'Please call before passing!',
-  category: categorie_medecin,
-  user: user3,
-)
-doctor33 = Business.create!(
-  name: 'Pablo Frischknecht',
-  address: 'Rue de Romont 20, 1700 Fribourg',
-  phone_number: '079 473 33 50',
-  comment: 'Please call before passing!',
-  category: categorie_medecin,
-  user: user3,
-)
-doctor34 = Business.create!(
-  name: 'Dr méd. Johanne Novarin',
-  address: 'Route de Tavel 2, 1700 Fribourg',
-  phone_number: '079 473 33 50',
-  comment: 'Please call before passing!',
-  category: categorie_medecin,
-  user: user3,
-)
-doctor35 = Business.create!(
-  name: 'Dr méd. Michel Meylan',
-  address: 'Avenue de la Gare 7, 1700 Fribourg',
-  phone_number: '079 473 33 50',
-  comment: 'Please call before passing!',
-  category: categorie_medecin,
-  user: user3,
-)
-doctor36 = Business.create!(
-  name: 'Eléonore Villet',
-  address: 'Avenue de la Gare 4, 1700 Fribourg',
-  phone_number: '079 473 33 50',
-  comment: 'Please call before passing!',
-  category: categorie_medecin,
-  user: user3,
-)
-doctor37 = Business.create!(
-  name: 'Jean-Marie Despond',
-  address: 'Boulevard de Pérolles 66, 1700 Fribourg',
-  phone_number: '079 473 33 50',
-  comment: 'Please call before passing!',
-  category: categorie_medecin,
-  user: user3,
-)
-doctor38 = Business.create!(
-  name: 'Dr méd. Geoffroy Cavé',
-  address: 'Avenue de la Gare 4, 1700 Fribourg',
-  phone_number: '079 473 33 50',
-  comment: 'Please call before passing!',
-  category: categorie_medecin,
-  user: user3,
-)
-doctor39 = Business.create!(
-  name: 'Dr. Hervé Monfront',
-  address: "Rue de l'Hôpital 4, 3960 Sierre",
-  phone_number: '079 473 33 50',
-  comment: 'Please call before passing!',
-  category: categorie_medecin,
-  user: user3,
-)
-doctor40 = Business.create!(
-  name: 'Gilles Martin',
-  address: 'Route de Montana 45, 3968 Veyras',
-  phone_number: '079 473 33 50',
-  comment: 'Please call before passing!',
-  category: categorie_medecin,
-  user: user3,
-)
-doctor41 = Business.create!(
-  name: 'Dr. méd. Isabelle Schoenenberger',
-  address: 'Place de la Gare 5, 1700 Fribourg',
   phone_number: '079 473 33 50',
   comment: 'Please call before passing!',
   category: categorie_medecin,
@@ -955,31 +804,13 @@ Schedule.create!(opens: DateTime.new(2021,4,5,14,0,0), closes: DateTime.new(2021
 Schedule.create!(opens: DateTime.new(2021,4,5,14,0,0), closes: DateTime.new(2021,4,10,7,0,0), business: doctor14)
 Schedule.create!(opens: DateTime.new(2021,4,5,14,0,0), closes: DateTime.new(2021,4,10,7,0,0), business: doctor15)
 Schedule.create!(opens: DateTime.new(2021,4,5,14,0,0), closes: DateTime.new(2021,4,10,7,0,0), business: doctor16)
-Schedule.create!(opens: DateTime.new(2021,4,5,14,0,0), closes: DateTime.new(2021,4,10,7,0,0), business: doctor17)
 Schedule.create!(opens: DateTime.new(2021,4,5,14,0,0), closes: DateTime.new(2021,4,10,7,0,0), business: doctor18)
-Schedule.create!(opens: DateTime.new(2021,4,5,14,0,0), closes: DateTime.new(2021,4,10,7,0,0), business: doctor19)
-Schedule.create!(opens: DateTime.new(2021,4,5,14,0,0), closes: DateTime.new(2021,4,10,7,0,0), business: doctor20)
 Schedule.create!(opens: DateTime.new(2021,4,5,14,0,0), closes: DateTime.new(2021,4,10,7,0,0), business: doctor21)
 Schedule.create!(opens: DateTime.new(2021,4,5,14,0,0), closes: DateTime.new(2021,4,10,7,0,0), business: doctor22)
 Schedule.create!(opens: DateTime.new(2021,4,5,14,0,0), closes: DateTime.new(2021,4,10,7,0,0), business: doctor23)
 Schedule.create!(opens: DateTime.new(2021,4,5,14,0,0), closes: DateTime.new(2021,4,10,7,0,0), business: doctor24)
 Schedule.create!(opens: DateTime.new(2021,4,5,14,0,0), closes: DateTime.new(2021,4,10,7,0,0), business: doctor25)
-Schedule.create!(opens: DateTime.new(2021,4,5,14,0,0), closes: DateTime.new(2021,4,10,7,0,0), business: doctor26)
-Schedule.create!(opens: DateTime.new(2021,4,5,14,0,0), closes: DateTime.new(2021,4,10,7,0,0), business: doctor27)
-Schedule.create!(opens: DateTime.new(2021,4,5,14,0,0), closes: DateTime.new(2021,4,10,7,0,0), business: doctor28)
-Schedule.create!(opens: DateTime.new(2021,4,5,14,0,0), closes: DateTime.new(2021,4,10,7,0,0), business: doctor29)
-Schedule.create!(opens: DateTime.new(2021,4,5,14,0,0), closes: DateTime.new(2021,4,10,7,0,0), business: doctor30)
-Schedule.create!(opens: DateTime.new(2021,4,5,14,0,0), closes: DateTime.new(2021,4,10,7,0,0), business: doctor31)
-Schedule.create!(opens: DateTime.new(2021,4,5,14,0,0), closes: DateTime.new(2021,4,10,7,0,0), business: doctor32)
-Schedule.create!(opens: DateTime.new(2021,4,5,14,0,0), closes: DateTime.new(2021,4,10,7,0,0), business: doctor33)
-Schedule.create!(opens: DateTime.new(2021,4,5,14,0,0), closes: DateTime.new(2021,4,10,7,0,0), business: doctor34)
-Schedule.create!(opens: DateTime.new(2021,4,5,14,0,0), closes: DateTime.new(2021,4,10,7,0,0), business: doctor35)
-Schedule.create!(opens: DateTime.new(2021,4,5,14,0,0), closes: DateTime.new(2021,4,10,7,0,0), business: doctor36)
-Schedule.create!(opens: DateTime.new(2021,4,5,14,0,0), closes: DateTime.new(2021,4,10,7,0,0), business: doctor37)
-Schedule.create!(opens: DateTime.new(2021,4,5,14,0,0), closes: DateTime.new(2021,4,10,7,0,0), business: doctor38)
-Schedule.create!(opens: DateTime.new(2021,4,5,14,0,0), closes: DateTime.new(2021,4,10,7,0,0), business: doctor39)
-Schedule.create!(opens: DateTime.new(2021,4,5,14,0,0), closes: DateTime.new(2021,4,10,7,0,0), business: doctor40)
-Schedule.create!(opens: DateTime.new(2021,4,5,14,0,0), closes: DateTime.new(2021,4,10,7,0,0), business: doctor41)
+
 
 
 Schedule.create!(opens: DateTime.new(2021,4,5,14,0,0), closes: DateTime.new(2021,4,10,7,0,0), business: vet1)
